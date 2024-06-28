@@ -34,7 +34,30 @@
         "targetName": "test"
       },
       "exclude": ["apps/cassandra-e2e/**/*"]
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
   ],
-  "nxCloudAccessToken": "YTBmMTMxNDYtNGNjYy00ODQzLTkzZWQtOTdmOGRlZjRjYjQ4fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "YTBmMTMxNDYtNGNjYy00ODQzLTkzZWQtOTdmOGRlZjRjYjQ4fHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "tailwind",
+        "linter": "eslint"
+      }
+    }
+  }
 }
