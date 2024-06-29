@@ -1,6 +1,5 @@
 import * as React from "react";
-
-import { cn } from "@luckyui/utils";
+import { cn } from "@lucky-ui/utils";
 
 const Table = React.forwardRef<
 	HTMLTableElement,

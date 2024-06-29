@@ -1,3 +1,3 @@
-import hackerfox from "./fox-logo-clear.png";
+import hackerfox from "./clear-cut-logo.png";
 
 export { hackerfox };

@@ -1,4 +1,4 @@
-import { cn } from "@luckyui/utils";
+import { cn } from "@lucky-ui/utils";
 import { forwardRef } from "react";
 import { NavigationMenuLink } from "./navigation-menu";
 

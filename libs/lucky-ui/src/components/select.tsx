@@ -3,8 +3,7 @@
 import * as React from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { CheckIcon, ChevronDownIcon } from "@radix-ui/react-icons";
-
-import { cn } from "@luckyui/utils";
+import { cn } from "@lucky-ui/utils";
 
 const Select = SelectPrimitive.Root;
 

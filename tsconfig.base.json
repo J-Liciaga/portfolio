@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@2024/*": ["apps/portfolio-2024/src/*"],
-      "@luckyui/*": ["libs/luckyui/src/*"]
+      "@lucky-ui/*": ["libs/lucky-ui/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

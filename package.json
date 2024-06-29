@@ -46,13 +46,16 @@
     "class-variance-authority": "^0.7.0",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
+    "embla-carousel-react": "^8.1.5",
     "express": "~4.18.1",
     "framer-motion": "^11.2.12",
     "lucide-react": "^0.397.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.0.4",
     "react": "18.2.0",
+    "react-day-picker": "^8.10.1",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.52.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
