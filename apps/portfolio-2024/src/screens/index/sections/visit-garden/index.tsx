@@ -1,13 +1,11 @@
-"use client";
-
 const styles = {
 	container: "",
 	content_wrapper: "",
 } as const;
 
-export default function ContactSection() {
+export default function VisitDigitalGardenSection() {
 	return (
-		<section id="contact" className={styles.container}>
+		<section id="visit-the-garden" className={styles.container}>
 			<div className={styles.content_wrapper}></div>
 		</section>
 	);

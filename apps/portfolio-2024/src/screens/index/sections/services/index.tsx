@@ -1,13 +1,11 @@
-"use client";
-
 const styles = {
 	container: "",
 	content_wrapper: "",
 } as const;
 
-export default function ContactSection() {
+export default function ServicesSection() {
 	return (
-		<section id="contact" className={styles.container}>
+		<section id="my-services" className={styles.container}>
 			<div className={styles.content_wrapper}></div>
 		</section>
 	);

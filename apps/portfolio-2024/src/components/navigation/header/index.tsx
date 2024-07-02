@@ -1,6 +1,6 @@
 "use client";
 
-import { hackerfox } from "@2024/assets/img";
+import { footer_logo, hackerfox } from "@2024/assets/img";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -26,7 +26,7 @@ export default function HeaderNavigation() {
 				<div>
 					<Link href={"/"}>
 						<Image
-							src={hackerfox}
+							src={footer_logo}
 							height={75}
 							width={75}
 							alt="hackerfox-jls-2024"
@@ -58,7 +58,7 @@ export default function HeaderNavigation() {
 							className="flex justify-center items-center | space-x-2"
 						>
 							<BackpackIcon />
-							<div>RESUME</div>
+							<div>Resume</div>
 						</Button>
 					</div>
 					<div>

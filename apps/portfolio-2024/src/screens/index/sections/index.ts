@@ -1,6 +1,6 @@
 import HeroSection from "./hero";
 import AboutSection from "./about";
-import ProjectsSection from "./projects";
+import ServicesSection from "./services";
 import ContactSection from "./contact";
 
-export { HeroSection, AboutSection, ProjectsSection, ContactSection };
+export { HeroSection, AboutSection, ServicesSection, ContactSection };

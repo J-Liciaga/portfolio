@@ -3,8 +3,7 @@ import { GlobeIcon } from "@radix-ui/react-icons";
 const styles = {
 	container: "h-screen w-screen",
 	container_wrapper: "h-full px-32 pt-20",
-	inner_wrapper:
-		"h-full | flex flex-col justify-center items-start | space-y-2",
+	inner_wrapper: `h-full | flex flex-col justify-center items-start | space-y-2`,
 } as const;
 
 export default function HeroSection() {
@@ -44,7 +43,7 @@ export default function HeroSection() {
 					</div>
 					<div className="flex justify-center items-center | space-x-4">
 						<div className="text-secondary | flex justify-start items-center | space-x-2">
-							<div className="w-4/6 text-[1.25rem] text-secondary font-extralight | tracking-widest">
+							<div className="w-4/6 text-[1.25rem] text-secondary font-extralight text-justify | tracking-widest">
 								I am a full-stack engineer with 10 years of
 								experience creating digital experiences. I am
 								also the co-founder of AVA.AI, an AI research
