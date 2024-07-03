@@ -1,87 +1,77 @@
 "use client";
 
 import Image from "next/image";
-import { WobbleCard } from "@lucky-ui/animated/wobble-card";
-import { footer_logo } from "@2024/assets/img";
+import { logo } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
+import { HoverEffect } from "@lucky-ui/animated/card-hover-effect";
+import { Button } from "@lucky-ui/components/button";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { projects } from "./_cards";
 
 const styles = {
-	container: "h-screen w-screen",
-	content_wrapper: "h-full w-full | p-32 space-y-8",
+	container: "h-fit w-screen",
+	content_wrapper: "h-full w-full | px-32 space-y-8",
 } as const;
 
 export default function ServicesSection() {
 	return (
 		<section id="my-services" className={styles.container}>
 			<div className={styles.content_wrapper}>
-				<div
-					className={`${bebas_neue.className} text-primary font-bold text-[2rem] tracking-wide`}
-				>
-					Case Studies & Projects
+				<div className="flex flex-col">
+					<div
+						className={`${bebas_neue.className} text-primary font-bold text-[4rem] tracking-wide`}
+					>
+						My Services
+					</div>
+					<div className="text-[1.25rem] font-extralight text-secondary">
+						Whether you need a complete web application, an
+						AI-powered tool, or a security assessment, I have the
+						skills to bring your project to life. Let&apos;s
+						collaborate to turn your ideas into reality.
+					</div>
 				</div>
-				<div className="w-full | grid grid-cols-1 lg:grid-cols-3 gap-4">
-					<WobbleCard
-						containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-						className=""
-					>
-						<div className="max-w-xs">
-							<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-								AVA RESEARCH
-							</h2>
-							<p className="mt-4 text-left  text-base/6 text-neutral-200">
-								With over 100,000 mothly active bot users,
-								Gippity AI is the most popular AI platform for
-								developers.
+
+				<HoverEffect items={projects} />
+				<div className="h-full w-full | grid grid-cols-7 gap-4 | space-x-8">
+					<div className="w-full col-span-4 | flex flex-col justify-center items-start | space-y-4">
+						<div
+							className={`${bebas_neue.className} text-primary font-bold text-[2rem] tracking-wide`}
+						>
+							I pioneer seamless integrations to address intricate
+							software challenges
+						</div>
+						<div className="w-fit text-secondary text-justify text-[1.25rem] font-extralight tracking-widest | space-y-4">
+							<p>
+								I believe that adopting groundbreaking,
+								low-impact strategies enhances digital
+								experiences and should be chosen when
+								appropriate.
+							</p>
+							<p>
+								In contrast to conventional development methods,
+								these innovative approaches use advanced
+								processes and minimal downtime, ensuring quicker
+								implementations, elevated customer satisfaction,
+								and superior results.
 							</p>
 						</div>
-						<Image
-							src={footer_logo}
-							width={500}
-							height={500}
-							alt="linear demo image"
-							className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-						/>
-					</WobbleCard>
-					<WobbleCard containerClassName="col-span-1">
-						<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							EVLWARE
-						</h2>
-						<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-							If someone yells “stop!”, goes limp, or taps out,
-							the fight is over.
-						</p>
-					</WobbleCard>
-					<WobbleCard containerClassName="col-span-1">
-						<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							DIGITAL GARDEN
-						</h2>
-						<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-							If someone yells “stop!”, goes limp, or taps out,
-							the fight is over.
-						</p>
-					</WobbleCard>
-					<WobbleCard
-						containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-						className=""
-					>
-						<div className="max-w-xs">
-							<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-								WAVE PLATFORMS
-							</h2>
-							<p className="mt-4 text-left  text-base/6 text-neutral-200">
-								With over 100,000 mothly active bot users,
-								Gippity AI is the most popular AI platform for
-								developers.
-							</p>
+						<div className="text-secondary text-justify">
+							<Button variant="outline">
+								<div className="flex justify-center items-center | space-x-2">
+									<div>Services</div>
+									<ArrowTopRightIcon />
+								</div>
+							</Button>
 						</div>
+					</div>
+					<div className="col-span-3 | flex justify-center items-center">
 						<Image
-							src={footer_logo}
-							width={500}
-							height={500}
-							alt="linear demo image"
-							className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+							src={logo}
+							height={200}
+							width={200}
+							alt="about-section-img"
 						/>
-					</WobbleCard>
+					</div>
 				</div>
 			</div>
 		</section>

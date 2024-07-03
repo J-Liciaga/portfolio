@@ -4,7 +4,7 @@ import { bebas_neue } from "@lucky-ui/assets/fonts";
 
 const styles = {
 	section_container: "",
-	inner_wrapper: "p-32 space-y-8",
+	inner_wrapper: "px-32 py-10 space-y-8",
 } as const;
 
 export default function TestimonialsSection() {
@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
 		<div className={styles.section_container}>
 			<div className={styles.inner_wrapper}>
 				<div
-					className={`${bebas_neue.className} text-primary font-bold text-[2rem] tracking-wide`}
+					className={`${bebas_neue.className} text-primary font-bold text-[4rem] tracking-wide`}
 				>
 					Here&apos;s What Others Have To Say
 				</div>

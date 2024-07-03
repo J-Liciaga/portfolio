@@ -1,6 +1,6 @@
 "use client";
 
-import { footer_logo } from "@2024/assets/img";
+import { logo } from "@2024/assets/img";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -30,16 +30,16 @@ export default function HeaderNavigation() {
 					fixed top-0 left-0 w-full py-5 text-center z-50 transition-all duration-300 
 					ease-in-out backdrop-blur-xl
 					${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"}
-			  `}
+			  	`}
 			>
 				<nav className="flex justify-between items-center | pt-4 px-32">
 					<div>
 						<Link href={"/"}>
 							<Image
-								src={footer_logo}
+								src={logo}
 								height={75}
 								width={75}
-								alt="hackerfox-jls-2024"
+								alt="logo-jls-2024"
 							/>
 						</Link>
 					</div>

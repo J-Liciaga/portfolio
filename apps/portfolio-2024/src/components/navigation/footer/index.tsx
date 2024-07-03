@@ -1,8 +1,9 @@
-import { footer_logo } from "@2024/assets/img";
+import { logo } from "@2024/assets/img";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@lucky-ui/components/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { bebas_neue } from "@lucky-ui/assets/fonts";
 
 export default function FooterNavigation() {
 	return (
@@ -11,15 +12,18 @@ export default function FooterNavigation() {
 				<div className="border | py-5 px-5 | rounded-md | space-y-8 | flex flex-col justify-center items-center">
 					<div className="w-full | grid grid-rows-3 gap-4">
 						<div className="row-span-2 flex flex-col justify-start items-start">
-							<div className="text-[4rem] text-primary font-bold tracking widest">
+							<div
+								className={`${bebas_neue.className} text-[4rem] text-primary font-bold tracking-wide`}
+							>
 								THAT&apos;S A WRAP!
 							</div>
-							<div className="text-secondary">
-								Lorem ipsum dolor sit, amet consectetur
-								adipisicing elit. Velit recusandae repellendus
-								quae voluptas ipsa nobis, accusamus fuga ipsam
-								ut quam illum eligendi adipisci voluptates ullam
-								aut reiciendis dolorum quia tenetur!
+							<div className="text-secondary font-extralight">
+								That&apos;s a wrap! Thank you for stopping by.
+								This site was designed in Figma and built using
+								Cursor. If you like what you&apos;ve seen, want
+								to work together, or just want to chat, feel
+								free to reach out. I&apos;m always interested in
+								new projects and case studies.
 							</div>
 						</div>
 						<div className="flex justify-end items-center | space-x-4 | text-secondary">
@@ -50,7 +54,7 @@ export default function FooterNavigation() {
 							<Link href="/">
 								<div>
 									<Image
-										src={footer_logo}
+										src={logo}
 										height={200}
 										width={200}
 										alt="footer-logo"

@@ -1,19 +1,19 @@
 import {
 	AboutSection,
-	ContactSection,
 	HeroSection,
 	TestimonialsSection,
 	ServicesSection,
+	WorkSection,
 } from "@2024/screens/index/sections";
 
 export default function IndexPage() {
 	return (
-		<div>
+		<>
 			<HeroSection />
 			<AboutSection />
 			<ServicesSection />
+			<WorkSection />
 			<TestimonialsSection />
-			<ContactSection />
-		</div>
+		</>
 	);
 }

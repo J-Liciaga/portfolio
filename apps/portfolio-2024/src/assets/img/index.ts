@@ -1,4 +1,6 @@
-import hackerfox from "./clear-cut-logo.png";
-import footer_logo from "./footer-logo.png";
+import simplified_logo from "./simplified-logo.png";
+import logo from "./logo.png";
+import evlware_logo from "./evlware-logo.png";
+import hacker_cat from "./hacker-cat-clean.png";
 
-export { hackerfox, footer_logo };
+export { hacker_cat, simplified_logo, logo, evlware_logo };
