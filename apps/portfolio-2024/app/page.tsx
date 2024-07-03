@@ -2,6 +2,7 @@ import {
 	AboutSection,
 	ContactSection,
 	HeroSection,
+	TestimonialsSection,
 	ServicesSection,
 } from "@2024/screens/index/sections";
 
@@ -11,6 +12,7 @@ export default function IndexPage() {
 			<HeroSection />
 			<AboutSection />
 			<ServicesSection />
+			<TestimonialsSection />
 			<ContactSection />
 		</div>
 	);

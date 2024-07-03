@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import { footer_logo } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import { Button } from "@lucky-ui/components/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
@@ -14,7 +16,12 @@ export default function AboutSection() {
 		<section id="about" className={styles.container}>
 			<div className="h-full w-full | grid grid-cols-7 gap-4 | p-32 space-x-8">
 				<div className="col-span-3 | flex justify-center items-center">
-					IMG
+					<Image
+						src={footer_logo}
+						height={200}
+						width={200}
+						alt="about-section-img"
+					/>
 				</div>
 				<div className="w-full col-span-4 | flex flex-col justify-center items-start | space-y-4">
 					<div
@@ -23,7 +30,7 @@ export default function AboutSection() {
 						I pioneer seamless integrations to address intricate
 						software challenges
 					</div>
-					<div className="text-secondary text-justify text-[1.25rem] font-extralight tracking-widest | space-y-4">
+					<div className="w-fit text-secondary text-justify text-[1.25rem] font-extralight tracking-widest | space-y-4 pr-10">
 						<p>
 							I believe that adopting groundbreaking, low-impact
 							strategies enhances digital experiences and should
