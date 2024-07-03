@@ -70,7 +70,12 @@
 	* {
 		@apply border-border;
 	}
+
+	html {
+		@apply min-h-screen overflow-x-hidden;
+	}
+
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground min-h-screen overflow-x-hidden;
 	}
 }

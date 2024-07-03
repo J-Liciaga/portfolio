@@ -15,9 +15,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<HeaderNavigation />
-			<body>{children}</body>
-			<FooterNavigation />
+			<body>
+				<HeaderNavigation />
+				<main className="min-h-screen min-w-screen">{children}</main>
+				<FooterNavigation />
+			</body>
 		</html>
 	);
 }
