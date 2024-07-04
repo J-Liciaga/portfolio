@@ -30,9 +30,10 @@ export default function ServicesSection() {
 						collaborate to turn your ideas into reality.
 					</div>
 				</div>
-
-				<HoverEffect items={projects} />
-				<div className="h-full w-full | grid grid-cols-7 gap-4 | space-x-8">
+				<div className="pt-10">
+					<HoverEffect items={projects} />
+				</div>
+				<div className="h-full w-full | grid grid-cols-7 gap-4 | pt-10 space-x-8">
 					<div className="w-full col-span-4 | flex flex-col justify-center items-start | space-y-4">
 						<div
 							className={`${bebas_neue.className} text-primary font-bold text-[2rem] tracking-wide`}

@@ -1,8 +1,9 @@
 "use client";
 
-import { logo } from "@2024/assets/img";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { light_logo, dark_logo } from "@lucky-ui/assets/img";
 import {
 	BackpackIcon,
 	EnvelopeClosedIcon,
@@ -12,11 +13,11 @@ import {
 	SunIcon,
 } from "@radix-ui/react-icons";
 import { Button } from "@lucky-ui/components/button";
-import { useState } from "react";
 import { useScrollDirection } from "@lucky-ui/hooks";
+import { ContactForm } from "@2024/components/atoms/contact-form";
 
 export default function HeaderNavigation() {
-	const [dark_theme, setDarkTheme] = useState(true);
+	const [dark_theme, setDarkTheme] = useState(false);
 	const [menuIsOpen, setMenuIsOpen] = useState(false);
 
 	const scrollDirection = useScrollDirection();
@@ -36,10 +37,10 @@ export default function HeaderNavigation() {
 					<div>
 						<Link href={"/"}>
 							<Image
-								src={logo}
+								src={dark_theme ? light_logo : dark_logo}
 								height={75}
 								width={75}
-								alt="logo-jls-2024"
+								alt="portfolio-logo"
 							/>
 						</Link>
 					</div>
@@ -72,13 +73,10 @@ export default function HeaderNavigation() {
 							</Button>
 						</div>
 						<div>
-							<Button
+							<ContactForm
 								variant="outline"
-								className="flex justify-center items-center | space-x-2"
-							>
-								<EnvelopeClosedIcon />
-								<div>Contact</div>
-							</Button>
+								icon={EnvelopeClosedIcon}
+							/>
 						</div>
 						<div>
 							<Button variant="outline">
