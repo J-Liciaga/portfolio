@@ -2,7 +2,7 @@ export const PORTFOLIO_LINKS = [
 	{
 		id: "contact-link",
 		label: "About Me",
-		href: "/#about",
+		href: "/about",
 	},
 	{
 		id: "consultation-link",

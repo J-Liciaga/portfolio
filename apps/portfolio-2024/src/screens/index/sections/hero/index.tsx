@@ -39,7 +39,9 @@ export default function HeroSection() {
 					</div>
 					<div className="flex | space-x-4 | text-[4rem] text-secondary font-semibold uppercase | tracking-widest">
 						<div>Co-Founder of</div>
-						<div className="text-primary">AVA.AI</div>
+						<div className="text-primary font-light tracking-widest">
+							AVA.AI
+						</div>
 					</div>
 					<div className="flex justify-center items-center | space-x-4">
 						<div className="text-secondary | flex justify-start items-center | space-x-2">

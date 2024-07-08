@@ -16,6 +16,7 @@ import { Button } from "@lucky-ui/components/button";
 import { useScrollDirection } from "@lucky-ui/hooks";
 import { ContactForm } from "@2024/components/atoms/contact-form";
 import { useTheme } from "next-themes";
+import LanguagePicker from "@2024/components/atoms/language-picker";
 
 export default function HeaderNavigation() {
 	const { theme, setTheme } = useTheme();
@@ -57,7 +58,7 @@ export default function HeaderNavigation() {
 							/>
 						</Link>
 					</div>
-					<div className="flex justify-center items-center space-x-4 | text-primary">
+					<div className="flex justify-center items-center space-x-4 ">
 						<div>
 							<Button
 								variant="outline"
@@ -69,12 +70,7 @@ export default function HeaderNavigation() {
 							</Button>
 						</div>
 						<div>
-							<Button variant="outline">
-								<div className="flex justify-center items-center | space-x-2">
-									<GlobeIcon />
-									<div>ENG</div>
-								</div>
-							</Button>
+							<LanguagePicker />
 						</div>
 						<div>
 							<Button

@@ -7,7 +7,10 @@ import { bebas_neue } from "@lucky-ui/assets/fonts";
 import Logo from "@2024/components/atoms/logo";
 import ResumeDownloadBtn from "@2024/components/atoms/resume-download-btn";
 import { ContactForm } from "@2024/components/atoms/contact-form";
-import { PORTFOLIO_LINKS, SOCIALS_LINKS } from "./_links";
+import {
+	PORTFOLIO_LINKS,
+	SOCIALS_LINKS,
+} from "@2024/config/const/footer-links";
 
 const styles = {
 	container: "py-4 space-y-8",
@@ -22,6 +25,7 @@ const styles = {
 	wrap_desc: "text-secondary font-extralight",
 	///
 	btn: "flex justify-center items-center | space-x-2",
+	link: " border border-border text-primary bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 rounded-md",
 	///
 	footer_container: "h-fit w-full | px-32",
 	footer_inner_wrapper:
@@ -80,12 +84,12 @@ export default function FooterNavigation() {
 								/>
 							</div>
 							<div>
-								<Button variant="outline">
-									<div className={styles.btn}>
+								<Link href="https://calendly.com/josiah-liciaga">
+									<div className={styles.link}>
 										<div>Schedule Consultation</div>
 										<ArrowTopRightIcon />
 									</div>
-								</Button>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -125,7 +129,7 @@ export default function FooterNavigation() {
 							Designed and Developed by Josiah Liciaga
 						</div>
 						<div className={styles.credits_copyright}>
-							<div className={styles.credits_year}>© 2024</div>
+							<div className={styles.credits_year}>©2024</div>
 							<div className={styles.credits_creator}>
 								Josiah Liciaga
 							</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<!-- Homepage -->
+	<url>
+		<loc>https://jliciaga.dev/</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- English Headlines Page -->
+	<url>
+		<loc>https://jliciaga.dev/en</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- Spanish Headlines Page -->
+	<url>
+		<loc>https://jliciaga.dev/es</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- Dutch Headlines Page -->
+	<url>
+		<loc>https://jliciaga.dev/de</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- Japanese Headlines Page -->
+	<url>
+		<loc>https://jliciaga.dev/jp</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+</urlset>
