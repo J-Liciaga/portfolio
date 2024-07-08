@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { light_logo, dark_logo } from "@lucky-ui/assets/img";
@@ -15,17 +15,30 @@ import {
 import { Button } from "@lucky-ui/components/button";
 import { useScrollDirection } from "@lucky-ui/hooks";
 import { ContactForm } from "@2024/components/atoms/contact-form";
+import { useTheme } from "next-themes";
 
 export default function HeaderNavigation() {
-	const [dark_theme, setDarkTheme] = useState(false);
-	const [menuIsOpen, setMenuIsOpen] = useState(false);
-
+	const { theme, setTheme } = useTheme();
 	const scrollDirection = useScrollDirection();
+	////
+	const [dark_theme, setDarkTheme] = useState<any>();
+	const [menu_is_open, setMenuIsOpen] = useState(false);
 
-	const handle_theme = () => setDarkTheme(!dark_theme);
+	useLayoutEffect(() => {
+		setDarkTheme(theme === "dark");
+	}, [theme]);
+
+	const handle_theme = () => {
+		if (theme === "dark") setTheme("light");
+		else setTheme("dark");
+	};
+
+	const handle_menu = () => {
+		setMenuIsOpen(!menu_is_open);
+	};
 
 	return (
-		<div className={`${menuIsOpen ? "overflow-hidden" : ""}`}>
+		<div className={`${menu_is_open ? "overflow-hidden" : ""}`}>
 			<header
 				className={`
 					fixed top-0 left-0 w-full py-5 text-center z-50 transition-all duration-300 
@@ -76,10 +89,16 @@ export default function HeaderNavigation() {
 							<ContactForm
 								variant="outline"
 								icon={EnvelopeClosedIcon}
+								rtl={false}
 							/>
 						</div>
 						<div>
-							<Button variant="outline">
+							<Button
+								variant="outline"
+								onClick={() => {
+									handle_menu();
+								}}
+							>
 								<HamburgerMenuIcon />
 							</Button>
 						</div>

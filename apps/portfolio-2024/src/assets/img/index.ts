@@ -1,4 +1,3 @@
-import light_logo from "./light_logo.png";
-import dark_logo from "./dark_logo.png";
+import founder from "./founder.jpg";
 
-export { light_logo, dark_logo };
+export { founder };

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { logo } from "@2024/assets/img";
+import { founder } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import { Button } from "@lucky-ui/components/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
@@ -15,12 +15,13 @@ export default function AboutSection() {
 	return (
 		<section id="about" className={styles.container}>
 			<div className="h-full w-full | grid grid-cols-7 gap-4 | p-32 space-x-8">
-				<div className="col-span-3 | flex justify-center items-center">
+				<div className="col-span-3 | flex justify-start items-center">
 					<Image
-						src={logo}
-						height={800}
-						width={800}
+						src={founder}
+						height={400}
+						width={400}
 						alt="about-section-img"
+						className="rounded-md"
 					/>
 				</div>
 				<div className="w-full col-span-4 | flex flex-col justify-center items-start | space-y-4">

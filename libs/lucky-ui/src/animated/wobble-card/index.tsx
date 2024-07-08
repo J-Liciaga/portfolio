@@ -1,17 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import { type ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../utils";
 
-export const WobbleCard = ({
+function Noise() {
+	return (
+		<div
+			className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
+			style={{
+				backgroundImage: "url(/noise.webp)",
+				backgroundSize: "30%",
+			}}
+		/>
+	);
+}
+
+type WobbleCardProps = {
+	children: ReactNode;
+	containerClassName?: string;
+	className?: string;
+};
+
+export function WobbleCard({
 	children,
 	containerClassName,
 	className,
-}: {
-	children: React.ReactNode;
-	containerClassName?: string;
-	className?: string;
-}) => {
+}: WobbleCardProps) {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	const [isHovering, setIsHovering] = useState(false);
 
@@ -22,6 +36,7 @@ export const WobbleCard = ({
 		const y = (clientY - (rect.top + rect.height / 2)) / 20;
 		setMousePosition({ x, y });
 	};
+
 	return (
 		<motion.section
 			onMouseMove={handleMouseMove}
@@ -35,9 +50,11 @@ export const WobbleCard = ({
 					? `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) scale3d(1, 1, 1)`
 					: "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
 				transition: "transform 0.1s ease-out",
+				background:
+					"linear-gradient(180deg, var(--slate-800), var(--slate-900)",
 			}}
 			className={cn(
-				"mx-auto w-full bg-indigo-800  relative rounded-2xl overflow-hidden",
+				"mx-auto w-full relative rounded-2xl overflow-hidden",
 				containerClassName,
 			)}
 		>
@@ -63,16 +80,4 @@ export const WobbleCard = ({
 			</div>
 		</motion.section>
 	);
-};
-
-const Noise = () => {
-	return (
-		<div
-			className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-			style={{
-				backgroundImage: "url(/noise.webp)",
-				backgroundSize: "30%",
-			}}
-		></div>
-	);
-};
+}

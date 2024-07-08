@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { WobbleCard } from "@lucky-ui/animated/wobble-card";
-import { logo } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
+import { CASE_STUDIES_AND_PROJECTS } from "@2024/config/const/card-studies-and-projects";
 
 const styles = {
 	container: "h-fit w-screen",
@@ -11,6 +11,32 @@ const styles = {
 } as const;
 
 export default function WorkSection() {
+	const render_cards = () => {
+		return CASE_STUDIES_AND_PROJECTS.map(
+			({ id, label, desc, cn, logo }) => (
+				<WobbleCard key={id} containerClassName={cn}>
+					<div className="max-w-xs">
+						<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+							{label}
+						</h2>
+						<p className="mt-4 text-left  text-base/6 text-neutral-200">
+							{desc}
+						</p>
+					</div>
+					{logo && (
+						<Image
+							src={logo}
+							width={500}
+							height={500}
+							alt="linear demo image"
+							className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+						/>
+					)}
+				</WobbleCard>
+			),
+		);
+	};
+
 	return (
 		<section id="my-services" className={styles.container}>
 			<div className={styles.content_wrapper}>
@@ -28,70 +54,7 @@ export default function WorkSection() {
 					</div>
 				</div>
 				<div className="w-full | grid grid-cols-1 lg:grid-cols-3 gap-4">
-					<WobbleCard
-						containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-						className=""
-					>
-						<div className="max-w-xs">
-							<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-								AVA RESEARCH
-							</h2>
-							<p className="mt-4 text-left  text-base/6 text-neutral-200">
-								With over 100,000 mothly active bot users,
-								Gippity AI is the most popular AI platform for
-								developers.
-							</p>
-						</div>
-						<Image
-							src={logo}
-							width={500}
-							height={500}
-							alt="linear demo image"
-							className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-						/>
-					</WobbleCard>
-					<WobbleCard containerClassName="col-span-1">
-						<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							EVLWARE
-						</h2>
-						<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-							A personal online ecosystem for cultivating,
-							connecting, and publicly sharing evolving ideas,
-							notes, and knowledge in a non-linear format.
-						</p>
-					</WobbleCard>
-					<WobbleCard containerClassName="col-span-1">
-						<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-							DIGITAL GARDEN
-						</h2>
-						<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-							A personal online ecosystem for cultivating,
-							connecting, and publicly sharing evolving ideas,
-							notes, and knowledge in a non-linear format.
-						</p>
-					</WobbleCard>
-					<WobbleCard
-						containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-						className=""
-					>
-						<div className="max-w-xs">
-							<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-								WAVE PLATFORMS
-							</h2>
-							<p className="mt-4 text-left  text-base/6 text-neutral-200">
-								With over 100,000 mothly active bot users,
-								Gippity AI is the most popular AI platform for
-								developers.
-							</p>
-						</div>
-						<Image
-							src={logo}
-							width={500}
-							height={500}
-							alt="linear demo image"
-							className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-						/>
-					</WobbleCard>
+					{render_cards()}
 				</div>
 			</div>
 		</section>

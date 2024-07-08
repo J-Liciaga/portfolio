@@ -1,4 +1,4 @@
-import { dark_logo, light_logo } from "@2024/assets/img";
+import { dark_logo, light_logo } from "@lucky-ui/assets/img";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -7,9 +7,9 @@ export default function Logo({ height = 75, width = 75 }) {
 		<Link href="/">
 			<div>
 				<Image
-					src={light_logo}
-					height={200}
-					width={200}
+					src={dark_logo}
+					height={height}
+					width={width}
 					alt="footer-logo"
 				/>
 			</div>
