@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
-    "serve:2024": "nx serve portfolio-2024",
+    "serve:alpha": "nx serve alpha_2024",
+    "serve:beta": "nx serve beta-2024",
     "workspace:test-builds": "nx affected -t build",
     "workspace:lint": "nx affected --target lint --parallel 3",
     "workspace:affected": "nx affected",

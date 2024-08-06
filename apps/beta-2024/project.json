@@ -1,0 +1,50 @@
+{
+	"name": "beta-2024",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/beta-2024",
+	"projectType": "application",
+	"tags": [],
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"outputs": ["{options.outputPath}"],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/apps/beta-2024"
+			},
+			"configurations": {
+				"development": {
+					"outputPath": "apps/beta-2024"
+				},
+				"production": {}
+			}
+		},
+		"serve": {
+			"executor": "@nx/next:server",
+			"defaultConfiguration": "production",
+			"options": {
+				"buildTarget": "beta-2024:build",
+				"dev": true
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "beta-2024:build:development",
+					"dev": true
+				}
+			}
+		},
+		"export": {
+			"executor": "@nx/next:export",
+			"options": {
+				"buildTarget": "beta-2024:build:production"
+			}
+		},
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "apps/beta-2024/jest.config.ts"
+			}
+		}
+	}
+}

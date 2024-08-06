@@ -1,0 +1,20 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"default\", \"rev-mappings\"]",
+	"declared_features": "",
+	"target": 6423576478976419116,
+	"profile": 1200860260873630964,
+	"path": 1595760790623588043,
+	"deps": [[15279721705773053031, "unicase", false, 14719947365875671929]],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/mime_guess-6ca749dcc73c66dc/dep-build-script-build-script-build"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 18397177268525768816,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}

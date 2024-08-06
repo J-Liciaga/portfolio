@@ -1,0 +1,26 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"config\", \"default\", \"dep_humansize\", \"dep_num_traits\", \"humansize\", \"mime\", \"mime_guess\", \"num-traits\", \"percent-encoding\", \"urlencode\", \"with-axum\"]",
+	"declared_features": "",
+	"target": 8222590218587986366,
+	"profile": 3797293754785534760,
+	"path": 11207211223014506530,
+	"deps": [
+		[3930354675071354477, "percent_encoding", false, 4576489841662680003],
+		[5752066361807754168, "dep_humansize", false, 7279260770356699950],
+		[10448766010662481490, "dep_num_traits", false, 6810560534982463996],
+		[11509610481968723839, "askama_escape", false, 16151854361410007608],
+		[17255800532227029927, "askama_derive", false, 6503894612053511353]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/askama-389b5d8d663cdc2a/dep-lib-askama"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 13378802492572846961,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}
