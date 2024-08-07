@@ -50,8 +50,8 @@ export function WobbleCard({
 					? `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) scale3d(1, 1, 1)`
 					: "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
 				transition: "transform 0.1s ease-out",
-				background:
-					"linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+				// background:
+				// 	"linear-gradient(180deg, var(--slate-800), var(--slate-900)",
 			}}
 			className={cn(
 				"mx-auto w-full relative rounded-2xl overflow-hidden",
@@ -59,11 +59,11 @@ export function WobbleCard({
 			)}
 		>
 			<div
-				className="relative  h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))]  sm:mx-0 sm:rounded-2xl overflow-hidden"
-				style={{
-					boxShadow:
-						"0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
-				}}
+				className="relative  h-full  sm:mx-0 sm:rounded-2xl overflow-hidden"
+				// style={{
+				// 	boxShadow:
+				// 		"0 10px 32px rgba(34, 42, 53, 0.12), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.05), 0 4px 6px rgba(34, 42, 53, 0.08), 0 24px 108px rgba(47, 48, 55, 0.10)",
+				// }}
 			>
 				<motion.div
 					style={{

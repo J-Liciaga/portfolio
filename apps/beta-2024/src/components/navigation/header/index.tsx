@@ -1,13 +1,9 @@
 "use client";
 
 import { useLayoutEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { light_logo, dark_logo } from "@lucky-ui/assets/img";
 import {
 	BackpackIcon,
 	EnvelopeClosedIcon,
-	GlobeIcon,
 	HamburgerMenuIcon,
 	MoonIcon,
 	SunIcon,
@@ -17,6 +13,117 @@ import { useScrollDirection } from "@lucky-ui/hooks";
 import { ContactForm } from "@2024/components/atoms/contact-form";
 import { useTheme } from "next-themes";
 import LanguagePicker from "@2024/components/atoms/language-picker";
+import Logo from "@2024/components/atoms/logo";
+import { Sidebar, SidebarBody, SidebarLink } from "@lucky-ui/animated/sidebar";
+import {
+	IconTopologyRing2,
+	IconBrandTabler,
+	IconSettings,
+	IconUserBolt,
+	IconBrandGithub,
+	IconMicroscope,
+	IconPhoneCheck,
+	IconDownload,
+	IconMessage2Check,
+	IconBrandLinkedin,
+} from "@tabler/icons-react";
+import Separator from "@lucky-ui/components/separator";
+
+const links = [
+	{
+		label: "Home",
+		href: "#",
+		icon: (
+			<IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "About Me",
+		href: "#",
+		icon: (
+			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Services",
+		href: "#",
+		icon: (
+			<IconTopologyRing2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Work",
+		href: "#",
+		icon: (
+			<IconMicroscope className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+];
+
+const PROJECT_LINKS = [
+	{
+		label: "AVA Research",
+		href: "#",
+		icon: (
+			<IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "EVLWARE",
+		href: "#",
+		icon: (
+			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Digital Garden",
+		href: "#",
+		icon: (
+			<IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+];
+
+const CONTACT_LINKS = [
+	{
+		label: "Schedule Consultation",
+		href: "#",
+		icon: (
+			<IconPhoneCheck className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Download Resume",
+		href: "#",
+		icon: (
+			<IconDownload className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Contact Me",
+		href: "#",
+		icon: (
+			<IconMessage2Check className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+];
+
+const SOCIAL_LINKS = [
+	{
+		label: "Github",
+		href: "#",
+		icon: (
+			<IconBrandGithub className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Linkedin",
+		href: "#",
+		icon: (
+			<IconBrandLinkedin className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+];
 
 export default function HeaderNavigation() {
 	const { theme, setTheme } = useTheme();
@@ -24,6 +131,7 @@ export default function HeaderNavigation() {
 	////
 	const [dark_theme, setDarkTheme] = useState<any>();
 	const [menu_is_open, setMenuIsOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 
 	useLayoutEffect(() => {
 		setDarkTheme(theme === "dark");
@@ -35,7 +143,7 @@ export default function HeaderNavigation() {
 	};
 
 	const handle_menu = () => {
-		setMenuIsOpen(!menu_is_open);
+		setOpen(!open);
 	};
 
 	return (
@@ -49,14 +157,7 @@ export default function HeaderNavigation() {
 			>
 				<nav className="flex justify-between items-center | pt-4 px-32">
 					<div>
-						<Link href={"/"}>
-							<Image
-								src={dark_theme ? light_logo : dark_logo}
-								height={75}
-								width={75}
-								alt="portfolio-logo"
-							/>
-						</Link>
+						<Logo />
 					</div>
 					<div className="flex justify-center items-center space-x-4 ">
 						<div>
@@ -101,6 +202,35 @@ export default function HeaderNavigation() {
 					</div>
 				</nav>
 			</header>
+			<Sidebar open={open} setOpen={setOpen}>
+				<SidebarBody className="justify-between gap-10">
+					<div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+						<div className="mt-8 flex flex-col gap-2">
+							{links.map((link, idx) => (
+								<SidebarLink key={idx} link={link} />
+							))}
+						</div>
+						<Separator className="my-4" />
+						<div className="flex flex-col gap-2">
+							{PROJECT_LINKS.map((link, idx) => (
+								<SidebarLink key={idx} link={link} />
+							))}
+						</div>
+						<Separator className="my-4" />
+						<div className="flex flex-col gap-2">
+							{CONTACT_LINKS.map((link, idx) => (
+								<SidebarLink key={idx} link={link} />
+							))}
+						</div>
+						<Separator className="my-4" />
+						<div className="flex flex-col gap-2">
+							{SOCIAL_LINKS.map((link, idx) => (
+								<SidebarLink key={idx} link={link} />
+							))}
+						</div>
+					</div>
+				</SidebarBody>
+			</Sidebar>
 		</div>
 	);
 }

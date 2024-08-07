@@ -8,14 +8,12 @@ export default function Logo({ height = 75, width = 75 }) {
 
 	return (
 		<Link href="/">
-			<div>
-				<Image
-					src={theme === "dark" ? light_logo : dark_logo}
-					height={height}
-					width={width}
-					alt="footer-logo"
-				/>
-			</div>
+			<Image
+				src={theme === "dark" ? light_logo : dark_logo}
+				height={height}
+				width={width}
+				alt="footer-logo"
+			/>
 		</Link>
 	);
 }

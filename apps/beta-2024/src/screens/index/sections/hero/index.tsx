@@ -19,7 +19,7 @@ export default function HeroSection() {
 						<div className="text-secondary | flex justify-center items-center | space-x-2">
 							<GlobeIcon />
 							<div className="text-[1.25rem] text-secondary font-extralight uppercase | tracking-widest">
-								HNL, HI - USA
+								MIAMI, FL - USA
 							</div>
 						</div>
 					</div>

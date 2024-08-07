@@ -16,10 +16,10 @@ export default function WorkSection() {
 			({ id, label, desc, cn, logo }) => (
 				<WobbleCard key={id} containerClassName={cn}>
 					<div className="max-w-xs">
-						<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+						<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-zinc-800">
 							{label}
 						</h2>
-						<p className="mt-4 text-left  text-base/6 text-neutral-200">
+						<p className="mt-4 text-left  text-base/6 text-zinc-800">
 							{desc}
 						</p>
 					</div>

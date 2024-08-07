@@ -17,7 +17,7 @@ const styles = {
 	///
 	wrap_container: "h-fit w-full | px-32",
 	wrap_inner_wrapper:
-		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8",
+		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8 | glass",
 	wrap_grid: "w-full | grid grid-rows-3 gap-4",
 	wrap_top_row: "row-span-2 flex flex-col justify-start items-start",
 	wrap_btm_row: "flex justify-end items-center | space-x-4 | text-secondary",
@@ -29,7 +29,7 @@ const styles = {
 	///
 	footer_container: "h-fit w-full | px-32",
 	footer_inner_wrapper:
-		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8",
+		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8 | glass",
 	footer_grid: "w-full | grid grid-cols-6 gap-4",
 	footer_credits:
 		"text-secondary uppercase | flex flex-col justify-center items-center",
