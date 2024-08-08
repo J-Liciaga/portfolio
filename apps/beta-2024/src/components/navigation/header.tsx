@@ -177,7 +177,10 @@ export default function HeaderNavigation() {
 							<LanguagePicker />
 						</div> */}
 						<div>
-							<Button variant="outline">
+							<Button
+								variant="outline"
+								className="hidden md:block"
+							>
 								<Link
 									href="/josiah-liciaga-resume-2024.pdf"
 									target="_blank"
@@ -195,6 +198,7 @@ export default function HeaderNavigation() {
 								variant="outline"
 								icon={EnvelopeClosedIcon}
 								rtl={false}
+								className="hidden md:block"
 							/>
 						</div>
 						<div>

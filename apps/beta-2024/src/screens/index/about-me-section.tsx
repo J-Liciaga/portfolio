@@ -3,47 +3,41 @@ import { founder } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import { Button } from "@lucky-ui/components/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import SectionTitle from "@2024/components/atoms/section-title";
 
 const styles = {
 	container: "h-full w-screen",
-	section_text: `${bebas_neue.className} text-[8rem] text-secondary`,
+	container_wrapper:
+		"h-full w-full | flex flex-col justify-center items-center | space-y-8 px-12",
+	content_layout: "| md:grid md:grid-cols-7 md:gap-4 | md:space-x-8",
+	content_inner_wrapper:
+		"w-full col-span-4 | flex flex-col justify-center items-start | space-y-4",
+	heading: `${bebas_neue.className} text-primary text-center md:text-left font-bold text-[2rem] tracking-wide`,
+	heading_desc:
+		"md:w-fit text-secondary text-justify text-[1.25rem] | space-y-4 md:pr-10",
 } as const;
 
 export default function AboutMeSection() {
 	return (
-		<div className="h-full w-full">
-			<div className="h-full w-full | flex flex-col justify-center items-center | space-y-8 px-12">
-				<div>
-					<div className="flex space-x-2">
-						<span
-							className={`${bebas_neue.className} text-red-800 font-bold text-[4rem] tracking-wide`}
-						>
-							01 |
-						</span>
-						<span
-							className={`${bebas_neue.className} font-bold text-[4rem] tracking-wide`}
-						>
-							ABOUT ME
-						</span>
-					</div>
-					<div className="w-fit text-secondary text-justify text-[1.25rem] font- | space-y-4 pr-10">
-						I am a full-stack engineer with 10 years of experience
+		<section id="about-me-section" className={styles.container}>
+			<div className={styles.container_wrapper}>
+				<SectionTitle
+					num={1}
+					title={"About Me"}
+					desc={`I am a full-stack engineer with 10 years of experience
 						creating digital experiences. I am also the co-founder
 						of AVA.AI, an AI research startup dedicated to AI
 						anthropomorphism for education, as well as, the
 						optimization of learning through the latest AI
-						technologies and science-based protocols.
-					</div>
-				</div>
-				<div className="grid grid-cols-7 gap-4 | space-x-8">
-					<div className="w-full col-span-4 | flex flex-col justify-center items-start | space-y-4">
-						<div
-							className={`${bebas_neue.className} text-primary font-bold text-[2rem] tracking-wide `}
-						>
+						technologies and science-based protocols.`}
+				/>
+				<div className={styles.content_layout}>
+					<div className={styles.content_inner_wrapper}>
+						<div className={styles.heading}>
 							I pioneer seamless integrations to address intricate
 							software challenges
 						</div>
-						<div className="w-fit text-secondary text-justify text-[1.25rem] | space-y-4 pr-10">
+						<div className={styles.heading_desc}>
 							<p>
 								I&apos;m a visionary software engineering
 								leader, pushing the boundaries of AI and machine
@@ -85,7 +79,7 @@ export default function AboutMeSection() {
 							</Button>
 						</div>
 					</div>
-					<div className="col-span-3 | flex justify-center items-center">
+					<div className="hidden md:col-span-3 | md:flex md:justify-center md:items-center">
 						<Image
 							src={founder}
 							alt="about-section-img"
@@ -94,6 +88,6 @@ export default function AboutMeSection() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
