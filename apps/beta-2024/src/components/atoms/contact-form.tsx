@@ -7,10 +7,12 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
+	DialogClose,
 } from "@lucky-ui/components/dialog";
 import Input from "@lucky-ui/components/input";
 import Label from "@lucky-ui/components/label";
 import TextArea from "@lucky-ui/components/textarea";
+import { useToast } from "@lucky-ui/components/use-toast";
 
 type ContactFormProps = {
 	variant: "outline" | "ghost";
@@ -29,7 +31,10 @@ export function ContactForm({
 	rtl = false,
 	className,
 }: ContactFormProps) {
+	const { toast } = useToast();
 	const Icon = icon;
+	const today = new Date();
+
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
@@ -100,9 +105,20 @@ export function ContactForm({
 					</div>
 				</div>
 				<DialogFooter>
-					<Button type="submit" className="bg-red-800">
-						Send Message
-					</Button>
+					<DialogClose asChild>
+						<Button
+							type="submit"
+							className="bg-red-800"
+							onClick={() => {
+								toast({
+									title: "Message Sent",
+									description: `${today}`,
+								});
+							}}
+						>
+							Send Message
+						</Button>
+					</DialogClose>
 				</DialogFooter>
 			</DialogContent>
 		</Dialog>

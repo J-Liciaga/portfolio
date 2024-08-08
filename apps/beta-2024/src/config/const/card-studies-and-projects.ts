@@ -30,7 +30,7 @@ export const CASE_STUDIES_AND_PROJECTS = [
 	{
 		id: "ava-research-card",
 		label: "AVA RESEARCH",
-		desc: "Academic Virtual Assistants an innovative platform revolutionizing information access and knowledge management. Using advanced AI, it provides instant, accurate answers to complex queries, accelerating research and enhancing productivity for organizations and academic entities.",
+		desc: "Academic Virtual Assistants, an innovative platform revolutionizing information access and knowledge management. Using advanced AI, it provides instant, accurate answers to complex queries, accelerating research and enhancing productivity for organizations and academic entities.",
 		cn: "col-span-1 lg:col-span-2 h-full glass dark:bg-neutral-800 min-h-[500px] lg:min-h-[300px]",
 		logo: ava_research_logo,
 	},
