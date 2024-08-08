@@ -11,7 +11,7 @@ const styles = {
 
 export default function ServicesSection() {
 	return (
-		<section id="my-services" className={styles.container}>
+		<section id="services-section" className={styles.container}>
 			<div className={styles.content_wrapper}>
 				<SectionTitle
 					num={2}

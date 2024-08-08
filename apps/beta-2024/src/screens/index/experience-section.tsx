@@ -61,7 +61,7 @@ export default function ExperienceSection() {
 	};
 
 	return (
-		<div>
+		<div id="experience-section">
 			<div className={styles.inner_wrapper}>
 				<SectionTitle
 					num={3}

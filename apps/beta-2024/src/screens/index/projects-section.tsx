@@ -4,6 +4,8 @@ import Image from "next/image";
 import { WobbleCard } from "@lucky-ui/animated/wobble-card";
 import { CASE_STUDIES_AND_PROJECTS } from "@2024/config/const/card-studies-and-projects";
 import SectionTitle from "@2024/components/atoms/section-title";
+import { Button } from "@lucky-ui/components/button";
+import { IconExternalLink } from "@tabler/icons-react";
 
 const styles = {
 	container: "h-fit w-screen",
@@ -14,7 +16,7 @@ const styles = {
 		"text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-zinc-200",
 	card_desc: "mt-4 text-left  text-base/6 text-zinc-200",
 	logo_img:
-		"absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl",
+		"hidden md:block absolute -right-4 lg:-right-[25%] grayscale filter -bottom-10 object-contain rounded-2xl",
 } as const;
 
 export default function ProjectsSection() {
@@ -35,13 +37,27 @@ export default function ProjectsSection() {
 							className={styles.logo_img}
 						/>
 					)}
+					<div className="absolute bottom-4 flex justify-start items-center pt-6 space-x-6">
+						<div className="bg-transparent text-white border-white">
+							Status: Ongoing
+						</div>
+						<Button
+							variant="outline"
+							className="bg-transparent text-white border-white"
+						>
+							<div className="flex justify-center items-center | space-x-2">
+								<div>VISIT</div>
+								<IconExternalLink />
+							</div>
+						</Button>
+					</div>
 				</WobbleCard>
 			),
 		);
 	};
 
 	return (
-		<section id="my-services" className={styles.container}>
+		<section id="case-studies-section" className={styles.container}>
 			<div className={styles.content_wrapper}>
 				<SectionTitle
 					num={4}
