@@ -3,11 +3,11 @@
 import { useRef, useEffect } from "react";
 
 export default function InteractiveBubble() {
-	const bubbleRef = useRef(null);
-	const curXRef = useRef(0);
+	const bubbleRef: any = useRef(null);
+	const curXRef: any = useRef(0);
 	const curYRef = useRef(0);
-	const tgXRef = useRef(0);
-	const tgYRef = useRef(0);
+	const tgXRef: any = useRef(0);
+	const tgYRef: any = useRef(0);
 
 	useEffect(() => {
 		const move = () => {
@@ -23,7 +23,7 @@ export default function InteractiveBubble() {
 			requestAnimationFrame(move);
 		};
 
-		const handleMouseMove = event => {
+		const handleMouseMove = (event: any) => {
 			tgXRef.current = event.clientX;
 			tgYRef.current = event.clientY;
 		};

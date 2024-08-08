@@ -2,11 +2,17 @@ import { Button } from "@lucky-ui/components/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
+type ResumeDownloadBtnProps = {
+	className?: string;
+};
+
 const styles = {
 	btn: "flex justify-center items-center | space-x-2",
 } as const;
 
-export default function ResumeDownloadBtn({ className }) {
+export default function ResumeDownloadBtn({
+	className,
+}: ResumeDownloadBtnProps) {
 	return (
 		<Button variant="ghost" className={className}>
 			<Link

@@ -1,11 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import { logo } from "@2024/assets/img";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import { HoverEffect } from "@lucky-ui/animated/card-hover-effect";
-import { Button } from "@lucky-ui/components/button";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export const projects = [
 	{
