@@ -5,7 +5,7 @@ export const PORTFOLIO_LINKS = [
 		href: "/about",
 	},
 	{
-		id: "consultation-link",
+		id: "services-link",
 		label: "Services",
 		href: "/services",
 	},

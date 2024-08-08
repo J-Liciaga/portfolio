@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@lucky-ui/utils";
 import Image from "next/image";
 import React, {
 	createContext,

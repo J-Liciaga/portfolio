@@ -11,23 +11,25 @@ import {
 	PORTFOLIO_LINKS,
 	SOCIALS_LINKS,
 } from "@2024/config/const/footer-links";
+import { GridPattern } from "@lucky-ui/assets/svg";
 
 const styles = {
-	container: "py-4 space-y-8",
+	container: "mt-32 py-4 space-y-8",
 	///
-	wrap_container: "h-fit w-full | px-32",
+	wrap_container: "h-fit w-full | px-12",
 	wrap_inner_wrapper:
 		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8 | glass",
 	wrap_grid: "w-full | grid grid-rows-3 gap-4",
-	wrap_top_row: "row-span-2 flex flex-col justify-start items-start",
+	wrap_top_row:
+		"relative | row-span-2 flex flex-col justify-start items-start",
 	wrap_btm_row: "flex justify-end items-center | space-x-4 | text-secondary",
 	wrap_title: `${bebas_neue.className} text-[4rem] text-primary font-bold tracking-wide`,
 	wrap_desc: "text-secondary font-extralight",
 	///
 	btn: "flex justify-center items-center | space-x-2",
-	link: "flex justify-center items-center | space-x-2 | border border-border text-primary bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 rounded-md",
+	link: "flex justify-center items-center | space-x-2 | border border-border text-primary bg-background hover:bg-accent hover:text-accent-foreground bg-neutral-800 text-white h-10 px-4 py-2 rounded-md",
 	///
-	footer_container: "h-fit w-full | px-32",
+	footer_container: "h-fit w-full | px-12",
 	footer_inner_wrapper:
 		"flex flex-col justify-center items-center | border rounded-md | py-5 px-5 space-y-8 | glass",
 	footer_grid: "w-full | grid grid-cols-6 gap-4",
@@ -81,6 +83,7 @@ export default function FooterNavigation() {
 									variant="outline"
 									icon={ArrowTopRightIcon}
 									rtl={true}
+									className="bg-neutral-800 text-white"
 								/>
 							</div>
 							<div>

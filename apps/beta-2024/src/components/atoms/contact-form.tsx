@@ -10,12 +10,13 @@ import {
 } from "@lucky-ui/components/dialog";
 import Input from "@lucky-ui/components/input";
 import Label from "@lucky-ui/components/label";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import TextArea from "@lucky-ui/components/textarea";
 
 type ContactFormProps = {
 	variant: "outline" | "ghost";
 	icon: any;
 	rtl: boolean;
+	className?: string;
 };
 
 const styles = {
@@ -26,12 +27,13 @@ export function ContactForm({
 	variant = "outline",
 	icon,
 	rtl = false,
+	className,
 }: ContactFormProps) {
 	const Icon = icon;
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<Button variant={variant}>
+				<Button variant={variant} className={className}>
 					<div className={styles.btn}>
 						{rtl ? (
 							<>
@@ -49,36 +51,58 @@ export function ContactForm({
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-[425px]">
 				<DialogHeader>
-					<DialogTitle>Edit profile</DialogTitle>
+					<DialogTitle>Contact Me</DialogTitle>
 					<DialogDescription>
-						Make changes to your profile here. Click save when
-						you&apos;re done.
+						Send me a message and I&apos;ll get back to you as soon
+						as possible.
 					</DialogDescription>
 				</DialogHeader>
 				<div className="grid gap-4 py-4">
 					<div className="grid grid-cols-4 items-center gap-4">
 						<Label htmlFor="name" className="text-right">
-							Name
+							Full Name
 						</Label>
 						<Input
 							id="name"
-							defaultValue="Pedro Duarte"
+							placeholder="John Wick"
+							className="col-span-3"
+						/>
+					</div>
+					<div className="grid grid-cols-4 items-center gap-4">
+						<Label htmlFor="name" className="text-right">
+							Email
+						</Label>
+						<Input
+							id="email"
+							placeholder="baba_yaga@no_burners.you"
 							className="col-span-3"
 						/>
 					</div>
 					<div className="grid grid-cols-4 items-center gap-4">
 						<Label htmlFor="username" className="text-right">
-							Username
+							Subject
 						</Label>
 						<Input
-							id="username"
-							defaultValue="@peduarte"
+							id="subject"
+							placeholder="eg. Pancake Recipe"
+							className="col-span-3"
+						/>
+					</div>
+					<div className="grid grid-cols-4 items-center gap-4">
+						<Label htmlFor="username" className="text-right">
+							Message
+						</Label>
+						<TextArea
+							id="message"
+							placeholder="eg. I really like pancakes."
 							className="col-span-3"
 						/>
 					</div>
 				</div>
 				<DialogFooter>
-					<Button type="submit">Save changes</Button>
+					<Button type="submit" className="bg-red-800">
+						Send Message
+					</Button>
 				</DialogFooter>
 			</DialogContent>
 		</Dialog>

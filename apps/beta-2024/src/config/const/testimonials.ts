@@ -1,27 +1,27 @@
 export const testimonials = [
 	{
-		quote: "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-		name: "Charles Dickens",
-		title: "A Tale of Two Cities",
+		quote: "Josiah is an exceptional software engineer and mentor. His technical expertise across various languages and technologies is remarkable. He communicates complex concepts clearly, fosters team growth, and stays current with industry trends. His leadership and passion inspire others. I wholeheartedly recommend Josiah for his brilliance and mentoring abilities.",
+		name: "Ryan Crosby",
+		title: "SaaS Software Sales & Automation",
 	},
 	{
-		quote: "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-		name: "William Shakespeare",
-		title: "Hamlet",
+		quote: "Josiah's expertise in AI and machine learning transformed our project. His innovative approach to implementing LLMs not only improved our chatbot's performance but also significantly boosted our team's productivity. His leadership style fosters creativity and continuous learning.",
+		name: "Sarah Fernandez",
+		title: "Tech Lead",
 	},
 	{
-		quote: "All that we see or seem is but a dream within a dream.",
-		name: "Edgar Allan Poe",
-		title: "A Dream Within a Dream",
+		quote: "Working with Josiah on our cloud migration was a game-changer. His deep understanding of cloud architecture and DevOps practices streamlined our processes and enhanced our system's security. Josiah's ability to explain complex concepts made the transition smooth for our entire team",
+		name: "Emily Rodriguez",
+		title: "VP of Engineering",
 	},
 	{
-		quote: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-		name: "Jane Austen",
-		title: "Pride and Prejudice",
+		quote: "I've had the pleasure of mentoring alongside Josiah, and his impact on junior developers is remarkable. He has a unique talent for breaking down complex problems and guiding others to find solutions. Josiah's passion for technology and continuous learning is truly inspiring",
+		name: "Alex Thompson",
+		title: "Senior Software Engineer",
 	},
 	{
-		quote: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-		name: "Herman Melville",
-		title: "Moby-Dick",
+		quote: "Josiah's contribution to our cybersecurity initiatives was game-changing. His development of robust, modular security tools significantly enhanced our threat detection capabilities. His proactive approach to staying ahead of potential vulnerabilities sets him apart in the field.",
+		name: "Robert Chen",
+		title: "Security Engineer",
 	},
 ];
