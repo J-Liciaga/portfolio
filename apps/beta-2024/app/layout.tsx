@@ -4,6 +4,7 @@ import {
 	HeaderNavigation,
 	FooterNavigation,
 } from "@2024/components/navigation";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
 	title: "Welcome | JLS",
@@ -22,6 +23,7 @@ export default async function RootLayout({
 				<HeaderNavigation />
 				<main className="min-h-screen min-w-screen">{children}</main>
 				<FooterNavigation />
+				<Analytics />
 			</body>
 		</html>
 	);
