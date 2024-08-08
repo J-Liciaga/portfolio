@@ -1,4 +1,4 @@
-import { cn } from "../../utils";
+import { cn } from "@lucky-ui/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";

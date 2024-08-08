@@ -66,6 +66,9 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.52.0",
     "react-i18next": "^14.1.2",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.167.1",
+    "three-noise": "^1.1.2",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

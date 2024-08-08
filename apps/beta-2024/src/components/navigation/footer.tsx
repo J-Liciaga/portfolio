@@ -35,8 +35,8 @@ const styles = {
 	footer_grid: "w-full | grid grid-cols-6 gap-4",
 	footer_credits:
 		"text-secondary uppercase | flex flex-col justify-center items-center",
-	footer_left_box: "col-span-2",
-	footer_right_box: "col-span-4 | w-full",
+	footer_left_box: "col-span-2 hidden md:block",
+	footer_right_box: "hidden md:block col-span-4 | w-full",
 	footer_right_inner_wrapper: "h-full | grid grid-cols-3 gap-4",
 	footer_col: "h-full | text-secondary",
 	credits_note: "font-extralight text-[0.75rem]",

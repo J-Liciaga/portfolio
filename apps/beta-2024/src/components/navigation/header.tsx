@@ -20,13 +20,16 @@ import Logo from "@2024/components/atoms/logo";
 import { Sidebar, SidebarBody, SidebarLink } from "@lucky-ui/animated/sidebar";
 import {
 	IconTopologyRing2,
+	IconBook,
+	IconBugOff,
 	IconBrandTabler,
-	IconSettings,
+	IconPlant2,
 	IconUserBolt,
 	IconBrandGithub,
 	IconMicroscope,
 	IconPhoneCheck,
 	IconDownload,
+	IconAtom,
 	IconMessage2Check,
 	IconBrandLinkedin,
 } from "@tabler/icons-react";
@@ -43,21 +46,28 @@ const links = [
 	},
 	{
 		label: "About Me",
-		href: "#",
+		href: "#about-me-section",
 		icon: (
 			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
 		label: "Services",
-		href: "#",
+		href: "#services-section",
 		icon: (
 			<IconTopologyRing2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Work",
-		href: "#",
+		label: "Experience",
+		href: "#experience-section",
+		icon: (
+			<IconAtom className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Case Studies & Projects",
+		href: "#case-studies-section",
 		icon: (
 			<IconMicroscope className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
@@ -66,24 +76,31 @@ const links = [
 
 const PROJECT_LINKS = [
 	{
-		label: "AVA Research",
-		href: "#",
-		icon: (
-			<IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-		),
-	},
-	{
-		label: "EVLWARE",
-		href: "#",
+		label: "Wave Platforms",
+		href: "/projects/wave-platforms",
 		icon: (
 			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Digital Garden",
-		href: "#",
+		label: "AVA Research",
+		href: "/projects/ava-research",
 		icon: (
-			<IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+			<IconBook className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "EVLWARE",
+		href: "/projects/evlware",
+		icon: (
+			<IconBugOff className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+		),
+	},
+	{
+		label: "Digital Garden",
+		href: "/digital-garden",
+		icon: (
+			<IconPlant2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 ];
