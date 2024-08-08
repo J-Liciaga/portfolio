@@ -51,7 +51,6 @@
 			}
 		}
 	],
-	"nxCloudAccessToken": "YTBmMTMxNDYtNGNjYy00ODQzLTkzZWQtOTdmOGRlZjRjYjQ4fHJlYWQtd3JpdGU=",
 	"generators": {
 		"@nx/next": {
 			"application": {

@@ -1,4 +1,4 @@
-export default function AVAProjectPage() {
+export default function SecurityServicePage() {
 	return (
 		<div>
 			<div></div>
