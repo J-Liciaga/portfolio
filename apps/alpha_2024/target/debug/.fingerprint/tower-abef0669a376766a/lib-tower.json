@@ -1,0 +1,29 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"__common\", \"futures-core\", \"futures-util\", \"log\", \"make\", \"pin-project\", \"pin-project-lite\", \"tokio\", \"tracing\", \"util\"]",
+	"declared_features": "",
+	"target": 6378152690346921726,
+	"profile": 3797293754785534760,
+	"path": 9929365317620180105,
+	"deps": [
+		[1302218311361961934, "tower_layer", false, 597317771936905840],
+		[2915666187231883656, "tokio", false, 8019527547802994655],
+		[4036510229207645508, "pin_project_lite", false, 15089841775521337254],
+		[6900596762949316367, "pin_project", false, 5759655524438456244],
+		[10358777096871976486, "tracing", false, 15865115477435853426],
+		[12460755007473876257, "futures_util", false, 17155006643288799020],
+		[14133539909871685996, "futures_core", false, 10924320688387256014],
+		[17638745932519692183, "tower_service", false, 16392457853719645830]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/tower-abef0669a376766a/dep-lib-tower"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 5705588507075233753,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}

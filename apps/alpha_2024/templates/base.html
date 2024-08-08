@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ name }} | 2024 Portfolio{% endblock %}</title>
+        <script src="/static/js/htmx.min.js"></script>
+        <script src="/static/components.js"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+        {% block extra_head %}{% endblock %}
+    </head>
+    <body class="">
+        <div class="">
+            <header></header>
+            <main>
+                {% block content %}{% endblock %}
+            </main>
+            <footer></footer>
+        </div>
+        {% block extra_body %}{% endblock %}
+    </body>
+</html>

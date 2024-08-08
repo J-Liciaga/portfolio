@@ -16,7 +16,11 @@ import DentistryIcon from "./dentistry-icon";
 import BoldChevronRightIcon from "./bold-chevron-right-icon";
 import ClipPath from "./clip-path";
 
+import GridPattern from "./grid-pattern";
+import NoisePattern from "./noise-pattern";
+
 export {
+	GridPattern,
 	BoldChevronRightIcon,
 	//
 	PlusIcon,
@@ -31,6 +35,7 @@ export {
 	LapTimerIcon,
 	ArrowLeftIcon,
 	ClipPath,
+	NoisePattern,
 };
 
 export { DentistryIcon, MedicineIcon };

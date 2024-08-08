@@ -1,0 +1,24 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"default\", \"rev-mappings\"]",
+	"declared_features": "",
+	"target": 526659891352593212,
+	"profile": 1200860260873630964,
+	"path": 9205900267349323351,
+	"deps": [
+		[871868610555714878, "build_script_build", false, 390606049475419709],
+		[7470442545028885647, "mime", false, 15501976687605180554],
+		[15279721705773053031, "unicase", false, 14719947365875671929]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/mime_guess-e6f64437e83edfa1/dep-lib-mime_guess"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 18397177268525768816,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}

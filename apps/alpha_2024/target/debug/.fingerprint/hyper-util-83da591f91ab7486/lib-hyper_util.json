@@ -1,0 +1,28 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"default\", \"http1\", \"server\", \"tokio\"]",
+	"declared_features": "",
+	"target": 10929581565116918689,
+	"profile": 3797293754785534760,
+	"path": 7843062180769848414,
+	"deps": [
+		[2733040398701274061, "http", false, 12066214930815591185],
+		[2915666187231883656, "tokio", false, 8019527547802994655],
+		[4036510229207645508, "pin_project_lite", false, 15089841775521337254],
+		[5844868078238010658, "http_body", false, 5750898358433569107],
+		[7716512697981150772, "hyper", false, 10464152898627370734],
+		[9826452894499940231, "bytes", false, 7758208759293193914],
+		[12460755007473876257, "futures_util", false, 17155006643288799020]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/hyper-util-83da591f91ab7486/dep-lib-hyper_util"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 8623942105099822436,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}

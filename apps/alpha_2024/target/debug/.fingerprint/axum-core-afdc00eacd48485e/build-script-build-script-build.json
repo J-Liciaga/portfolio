@@ -1,0 +1,22 @@
+{
+	"rustc": 10297157445277311328,
+	"features": "[\"tracing\"]",
+	"declared_features": "",
+	"target": 9652763411108993936,
+	"profile": 1200860260873630964,
+	"path": 7726602518700675201,
+	"deps": [
+		[17162292966369300404, "rustversion", false, 14086635907148059983]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/axum-core-afdc00eacd48485e/dep-build-script-build-script-build"
+			}
+		}
+	],
+	"rustflags": [],
+	"metadata": 14881847943984526847,
+	"config": 2202906307356721367,
+	"compile_kind": 0
+}
