@@ -1,3 +1,4 @@
+// import ParticleScene from "@2024/components/atoms/particle-scene";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import { GlobeIcon } from "@radix-ui/react-icons";
 
@@ -5,7 +6,7 @@ const styles = {
 	container: "h-screen w-screen",
 	container_wrapper: "h-full w-full | p-12",
 	hero_box:
-		"h-full w-full flex flex-col justify-end items-center md:justify-end md:items-start",
+		"relative z-50 h-full w-full flex flex-col justify-end items-center md:justify-end md:items-start",
 	misc_box: "flex justify-start items-center | space-x-4 | leading-[4rem]",
 	misc_text:
 		"text-[1.25rem] text-secondary font-extralight uppercase | tracking-widest",
@@ -19,7 +20,9 @@ export default function HeroSection() {
 	return (
 		<section id="hero-section" className={styles.container}>
 			<div className={styles.container_wrapper}>
-				<div></div>
+				{/* <div className="h-full w-full absolute top-0 left-0 z-0">
+					<ParticleScene/>
+				</div> */}
 				<div className={styles.hero_box}>
 					<div className={styles.misc_box}>
 						<div className={styles.misc_text}>EST. 2014</div>
