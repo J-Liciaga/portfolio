@@ -4,7 +4,8 @@ import { GlobeIcon } from "@radix-ui/react-icons";
 const styles = {
 	container: "h-screen w-screen",
 	container_wrapper: "h-full w-full | p-12",
-	hero_box: "h-full w-full flex flex-col justify-end",
+	hero_box:
+		"h-full w-full flex flex-col justify-end items-center md:justify-end md:items-start",
 	misc_box: "flex justify-start items-center | space-x-4 | leading-[4rem]",
 	misc_text:
 		"text-[1.25rem] text-secondary font-extralight uppercase | tracking-widest",
