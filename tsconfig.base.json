@@ -16,6 +16,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@2024/*": ["apps/beta-2024/src/*"],
+			"@garden/*": ["apps/the-garden/src/*"],
 			"@lucky-ui/*": ["libs/lucky-ui/src/*"]
 		}
 	},
