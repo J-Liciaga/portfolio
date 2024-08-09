@@ -1,11 +1,14 @@
 {
   "name": "@portfolio/source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
     "serve:alpha": "nx serve alpha_2024",
     "serve:beta": "nx serve beta-2024",
+    "build:beta": "nx build beta-2024 --prod",
+    "serve:garden": "nx serve the-garden",
+    "build:garden": "nx build the-garden --prod",
     "workspace:test-builds": "nx affected -t build",
     "workspace:lint": "nx affected --target lint --parallel 3",
     "workspace:affected": "nx affected",

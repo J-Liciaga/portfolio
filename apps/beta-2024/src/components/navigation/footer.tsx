@@ -11,7 +11,6 @@ import {
 	PORTFOLIO_LINKS,
 	SOCIALS_LINKS,
 } from "@2024/config/const/footer-links";
-import { GridPattern } from "@lucky-ui/assets/svg";
 
 const styles = {
 	container: "mt-32 py-4 space-y-8",
@@ -27,7 +26,7 @@ const styles = {
 	wrap_desc: "text-secondary font-extralight",
 	///
 	btn: "flex justify-center items-center | space-x-2",
-	link: "flex justify-center items-center | space-x-2 | border border-border text-primary bg-background hover:bg-accent hover:text-accent-foreground bg-neutral-800 text-white h-10 px-4 py-2 rounded-md",
+	link: "flex justify-center items-center | space-x-2",
 	///
 	footer_container: "h-fit w-full | px-12",
 	footer_inner_wrapper:
@@ -87,12 +86,17 @@ export default function FooterNavigation() {
 								/>
 							</div>
 							<div>
-								<Link href="https://calendly.com/josiah-liciaga">
-									<div className={styles.link}>
-										<div>Schedule Consultation</div>
-										<ArrowTopRightIcon />
-									</div>
-								</Link>
+								<Button
+									variant={"default"}
+									className="bg-neutral-800 hover:bg-accent"
+								>
+									<Link href="https://calendly.com/josiah-liciaga">
+										<div className={styles.link}>
+											<div>Schedule Consultation</div>
+											<ArrowTopRightIcon />
+										</div>
+									</Link>
+								</Button>
 							</div>
 						</div>
 					</div>

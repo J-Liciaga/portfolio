@@ -9,6 +9,8 @@ const Dialog = DialogPrimitive.Root;
 
 const DialogTrigger = DialogPrimitive.Trigger;
 
+const DialogClose = DialogPrimitive.Close;
+
 const DialogPortal = ({
 	//@ts-expect-error 2339
 	className,
@@ -121,4 +123,5 @@ export {
 	DialogFooter,
 	DialogTitle,
 	DialogDescription,
+	DialogClose,
 };

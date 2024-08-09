@@ -5,6 +5,7 @@ import {
 	FooterNavigation,
 } from "@2024/components/navigation";
 import { Analytics } from "@vercel/analytics/react";
+import Toaster from "@lucky-ui/components/toaster";
 
 export const metadata = {
 	title: "Welcome | JLS",
@@ -24,6 +25,7 @@ export default async function RootLayout({
 				<main className="min-h-screen min-w-screen">{children}</main>
 				<FooterNavigation />
 				<Analytics />
+				<Toaster />
 			</body>
 		</html>
 	);
