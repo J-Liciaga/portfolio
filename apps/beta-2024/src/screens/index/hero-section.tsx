@@ -20,9 +20,9 @@ export default function HeroSection() {
 	return (
 		<section id="hero-section" className={styles.container}>
 			<div className={styles.container_wrapper}>
-				{/* <div className="h-full w-full absolute top-0 left-0 z-0">
-					<ParticleScene/>
-				</div> */}
+				<div className="h-full w-full absolute top-0 left-0 z-0">
+					{/* <ParticleScene/> */}
+				</div>
 				<div className={styles.hero_box}>
 					<div className={styles.misc_box}>
 						<div className={styles.misc_text}>EST. 2014</div>

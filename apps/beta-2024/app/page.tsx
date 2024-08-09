@@ -1,6 +1,6 @@
 "use client";
 
-// import InteractiveBubble from "@2024/components/atoms/interactive-bubble";
+import { useEffect } from "react";
 import {
 	AboutMeSection,
 	ExperienceSection,
@@ -9,7 +9,6 @@ import {
 	ServicesSection,
 	TestimonialsSection,
 } from "@2024/screens/index";
-import { useEffect } from "react";
 
 const styles = {
 	container: "space-y-32",

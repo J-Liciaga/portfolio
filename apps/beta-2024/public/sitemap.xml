@@ -25,4 +25,19 @@
 		<loc>https://jliciaga.dev/jp</loc>
 		<lastmod>2024-07-07</lastmod>
 	</url>
+	<!-- About Page -->
+	<url>
+		<loc>https://jliciaga.dev/services</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- Services Page -->
+	<url>
+		<loc>https://jliciaga.dev/services</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
+	<!-- Projects Page -->
+	<url>
+		<loc>https://jliciaga.dev/projects</loc>
+		<lastmod>2024-07-07</lastmod>
+	</url>
 </urlset>
