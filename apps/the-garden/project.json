@@ -1,0 +1,50 @@
+{
+	"name": "the-garden",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/the-garden",
+	"projectType": "application",
+	"tags": [],
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"outputs": ["{options.outputPath}"],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/apps/the-garden"
+			},
+			"configurations": {
+				"development": {
+					"outputPath": "apps/the-garden"
+				},
+				"production": {}
+			}
+		},
+		"serve": {
+			"executor": "@nx/next:server",
+			"defaultConfiguration": "production",
+			"options": {
+				"buildTarget": "the-garden:build",
+				"dev": true
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "the-garden:build:development",
+					"dev": true
+				}
+			}
+		},
+		"export": {
+			"executor": "@nx/next:export",
+			"options": {
+				"buildTarget": "the-garden:build:production"
+			}
+		},
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "apps/the-garden/jest.config.ts"
+			}
+		}
+	}
+}
