@@ -106,6 +106,7 @@
     "babel-jest": "^29.4.1",
     "commitizen": "^4.3.0",
     "conventional-commit-types": "^3.0.0",
+    "cssnano": "^7.0.4",
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.19.2",
     "eslint": "~8.57.0",

@@ -7,7 +7,7 @@ type ResumeDownloadBtnProps = {
 };
 
 const styles = {
-	btn: "flex justify-center items-center | space-x-2",
+	btn: "h-full w-full flex justify-center items-center | space-x-2",
 } as const;
 
 export default function ResumeDownloadBtn({
@@ -19,6 +19,8 @@ export default function ResumeDownloadBtn({
 				href="/josiah-liciaga-resume-2024.pdf"
 				target="_blank"
 				rel="noopener noreferrer"
+				passHref
+				className="h-full w-full"
 			>
 				<div className={styles.btn}>
 					<div>Resume</div>
