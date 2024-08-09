@@ -45,14 +45,15 @@ export default function HeaderNavigation() {
 						<div>
 							<Button
 								variant="outline"
-								className="hidden md:block"
+								className="hidden md:flex"
 							>
 								<Link
 									href="/josiah-liciaga-resume-2024.pdf"
 									target="_blank"
 									rel="noopener noreferrer"
+									passHref
 								>
-									<div className="flex justify-center items-center | space-x-2">
+									<div className="flex justify-center items-center | space-x-2 h-10">
 										<BackpackIcon />
 										<div>Resume</div>
 									</div>
@@ -73,6 +74,7 @@ export default function HeaderNavigation() {
 								onClick={() => {
 									handle_menu();
 								}}
+								aria-label="menu-button"
 							>
 								<HamburgerMenuIcon />
 							</Button>
