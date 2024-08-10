@@ -1,36 +1,18 @@
-"use client";
+import { redirect } from "next/navigation";
+import { fallbackLng, languages } from "@2024/config/i18n/settings";
+import { headers } from "next/headers";
 
-import { useEffect } from "react";
-import {
-	AboutMeSection,
-	ExperienceSection,
-	HeroSection,
-	ProjectsSection,
-	ServicesSection,
-	TestimonialsSection,
-} from "@2024/screens/index";
+export default function RootPage() {
+	const headersList = headers();
+	const acceptLanguage = headersList.get("accept-language");
 
-const styles = {
-	container: "space-y-32",
-};
+	let lng = fallbackLng;
+	if (acceptLanguage) {
+		lng = acceptLanguage.split(",")[0].split("-")[0];
+		if (!languages.includes(lng)) {
+			lng = fallbackLng;
+		}
+	}
 
-export default function IndexPage() {
-	useEffect(() => {
-		(async () => {
-			const LocomotiveScroll = (await import("locomotive-scroll"))
-				.default;
-			const locomotive_scroll = new LocomotiveScroll();
-		})();
-	}, []);
-
-	return (
-		<div className={styles.container}>
-			<HeroSection />
-			<AboutMeSection />
-			<ServicesSection />
-			<ExperienceSection />
-			<ProjectsSection />
-			<TestimonialsSection />
-		</div>
-	);
+	redirect(`/${lng}`);
 }

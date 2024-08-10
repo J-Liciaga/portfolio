@@ -1,37 +1,58 @@
-import {
-	evlware_logo,
-	// wave_squad_logo,
-	// digital_garden_logo,
-	ava_research_logo,
-} from "@lucky-ui/assets/img";
+import { evlware_logo, ava_research_logo } from "@lucky-ui/assets/img";
+import { useTranslation } from "@2024/config/i18n/client";
 
-export const CASE_STUDIES_AND_PROJECTS = [
+const PROJECTS = [
 	{
-		id: "evlware-card",
-		label: "EVLWARE",
-		desc: "An AI-powered penetration testing framework that automates and enhances cybersecurity assessments using machine learning and advanced security tools.",
+		id: "evlware",
 		cn: "col-span-1 lg:col-span-2 h-full glass dark:bg-neutral-800 min-h-[500px] lg:min-h-[300px]",
+		link: (lng: string) => `https://jliciaga.dev/${lng}/projects/evlware`,
 		logo: evlware_logo,
 	},
 	{
-		id: "wave-card",
-		label: "WAVE PLATFORMS",
-		desc: "An innovative social network using advanced tech for intelligent matching and real-time communication. Focused on privacy and scalability, it delivers a seamless, engaging user experience.",
+		id: "wave",
 		cn: "col-span-1 glass dark:bg-neutral-800",
+		link: (lng: string) =>
+			`https://jliciaga.dev/${lng}/projects/wave-platforms`,
 		logo: null,
 	},
 	{
-		id: "digital-garden-card",
-		label: "DIGITAL GARDEN",
-		desc: "A personalized online space for cultivating and sharing ideas. This platform transforms note-taking into an interconnected web of knowledge.",
+		id: "garden",
 		cn: "col-span-1 glass dark:bg-neutral-800",
+		link: (lng: string) => `https://garden.jliciaga.dev/${lng}`,
 		logo: null,
 	},
 	{
-		id: "ava-research-card",
-		label: "AVA RESEARCH",
-		desc: "Academic Virtual Assistants, an innovative platform revolutionizing information access and knowledge management. Using advanced AI, it provides instant, accurate answers to complex queries, accelerating research and enhancing productivity for organizations and academic entities.",
+		id: "ava",
 		cn: "col-span-1 lg:col-span-2 h-full glass dark:bg-neutral-800 min-h-[500px] lg:min-h-[300px]",
+		link: (lng: string) => `https://ava-research.com/${lng}`,
 		logo: ava_research_logo,
 	},
 ] as const;
+
+type P = [
+	{
+		title: string;
+		description: string;
+		cn: string;
+		link: string;
+		logo: any;
+	},
+];
+
+export default function PROJECTS_FACTORY(lng: string) {
+	const output: any[] | P = [];
+	const { t } = useTranslation(lng, "projects");
+
+	PROJECTS.map(({ id, cn, link, logo }) => {
+		output.push({
+			id,
+			label: t(`${id}.label`),
+			desc: t(`${id}.desc`),
+			cn,
+			link: link(lng),
+			logo: logo,
+		});
+	});
+
+	return output;
+}

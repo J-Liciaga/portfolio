@@ -1,0 +1,22 @@
+{
+	"page": {
+		"section_title": "Services",
+		"section_intro": "I offer comprehensive software engineering solutions with a focus on AI and machine learning. My services span full-stack development, cloud architecture, and data engineering, all underpinned by a commitment to security and performance. Leveraging cutting-edge technologies, I design and implement scalable, efficient systems that drive innovation. From leading cross-functional teams to modernizing legacy systems, I bring a wealth of experience to every project. Whether you're looking to optimize your development processes, implement AI-driven solutions, or transform your digital infrastructure, I have the expertise to turn your vision into reality."
+	},
+	"front-end": {
+		"title": "Front-End",
+		"desc": "I build lightning-fast, accessible mobile & web applications that delight users and drive results. Optimized for speed, crafted for inclusivity, and engineered for cost-efficiency."
+	},
+	"back-end": {
+		"title": "Back-End",
+		"desc": "I architect robust, scalable server-side systems that power seamless user experiences. From efficient APIs to high-performance databases, I build secure, optimized backends that handle complex operations with ease."
+	},
+	"ml-ai": {
+		"title": "ML & Gen AI",
+		"desc": "I build AI systems that generate content, answer queries, and automate complex tasks. From custom chatbots and virtual assistants to text summarization and code generation tools, I leverage cutting-edge language models to enhance productivity and innovation."
+	},
+	"cloud": {
+		"title": "Cloud",
+		"desc": "I simulate advanced cyber threats to fortify your defenses. From penetration testing and social engineering to custom exploit development, I uncover vulnerabilities before real attackers do."
+	}
+}

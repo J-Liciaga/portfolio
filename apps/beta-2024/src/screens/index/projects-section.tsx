@@ -2,10 +2,15 @@
 
 import Image from "next/image";
 import { WobbleCard } from "@lucky-ui/animated/wobble-card";
-import { CASE_STUDIES_AND_PROJECTS } from "@2024/config/const/card-studies-and-projects";
+import PROJECTS_FACTORY from "@2024/config/const/card-studies-and-projects";
 import SectionTitle from "@2024/components/atoms/section-title";
-import { Button } from "@lucky-ui/components/button";
 import { IconExternalLink } from "@tabler/icons-react";
+import { LinkPreview } from "@lucky-ui/animated/link-preview";
+import { useTranslation } from "@2024/config/i18n/client";
+
+type ProjectsSectionProps = {
+	lng: string;
+};
 
 const styles = {
 	container: "h-fit w-screen",
@@ -19,41 +24,39 @@ const styles = {
 		"hidden md:block absolute -right-4 lg:-right-[25%] grayscale filter -bottom-10 object-contain rounded-2xl",
 } as const;
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ lng }: ProjectsSectionProps) {
+	const PROJECTS = PROJECTS_FACTORY(lng);
+	const { t } = useTranslation(lng, "projects");
+
 	const render_cards = () => {
-		return CASE_STUDIES_AND_PROJECTS.map(
-			({ id, label, desc, cn, logo }) => (
-				<WobbleCard key={id} containerClassName={cn}>
-					<div className={styles.card_content_wrapper}>
-						<h2 className={styles.card_label}>{label}</h2>
-						<p className={styles.card_desc}>{desc}</p>
+		return PROJECTS.map(({ id, label, desc, cn, logo }) => (
+			<WobbleCard key={id} containerClassName={cn}>
+				<div className={styles.card_content_wrapper}>
+					<h2 className={styles.card_label}>{label}</h2>
+					<p className={styles.card_desc}>{desc}</p>
+				</div>
+				{logo && (
+					<Image
+						src={logo}
+						width={500}
+						height={500}
+						alt="linear demo image"
+						className={styles.logo_img}
+					/>
+				)}
+				<div className="absolute bottom-4 flex justify-start items-center pt-6 space-x-6">
+					<div className="bg-transparent text-white border-white">
+						Status: Ongoing
 					</div>
-					{logo && (
-						<Image
-							src={logo}
-							width={500}
-							height={500}
-							alt="linear demo image"
-							className={styles.logo_img}
-						/>
-					)}
-					<div className="absolute bottom-4 flex justify-start items-center pt-6 space-x-6">
-						<div className="bg-transparent text-white border-white">
-							Status: Ongoing
+					<LinkPreview url="https://framer.com/motion">
+						<div className="flex justify-center items-center | space-x-2">
+							<div>VISIT</div>
+							<IconExternalLink />
 						</div>
-						<Button
-							variant="outline"
-							className="bg-transparent text-white border-white"
-						>
-							<div className="flex justify-center items-center | space-x-2">
-								<div>VISIT</div>
-								<IconExternalLink />
-							</div>
-						</Button>
-					</div>
-				</WobbleCard>
-			),
-		);
+					</LinkPreview>
+				</div>
+			</WobbleCard>
+		));
 	};
 
 	return (
@@ -61,19 +64,8 @@ export default function ProjectsSection() {
 			<div className={styles.content_wrapper}>
 				<SectionTitle
 					num={4}
-					title={`Case Studies & Projects`}
-					desc={`My portfolio showcases a diverse range of innovative
-							solutions that push the boundaries of technology.
-							From developing cutting-edge AI chatbots to
-							architecting scalable cloud infrastructures, each
-							project represents a journey of discovery and
-							innovation. Dive in to see how I'm shaping the
-							future of technology through continuous learning and
-							bold experimentation. These case studies not only
-							showcase technical expertise but also highlight my
-							ability to lead teams, navigate complex regulatory
-							environments, and deliver solutions that drive
-							tangible business value.`}
+					title={t("page.section_title")}
+					desc={t("page.section_intro")}
 				/>
 				<div className={styles.card_box}>{render_cards()}</div>
 			</div>
