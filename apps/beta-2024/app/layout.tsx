@@ -29,7 +29,7 @@ export default async function RootLayout({
 	return (
 		<html lang={lng}>
 			<body>
-				<HeaderNavigation />
+				<HeaderNavigation lng={lng} />
 				<main className="min-h-screen min-w-screen">{children}</main>
 				<FooterNavigation lng={lng} />
 				<Analytics />

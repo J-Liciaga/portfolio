@@ -2,6 +2,26 @@
 	"testimonials": {
 		"title": "Here's What Others Have To Say"
 	},
+	"header": {
+		"portfolio_links": {
+			"home": "Home",
+			"about": "About Me",
+			"services": "Services",
+			"experience": "My Experience",
+			"projects": "Case Studies & Projects"
+		},
+		"project_links": {
+			"wave": "WAVE PLATFORMS",
+			"ava": "AVA RESEARCH",
+			"evlware": "EVLWARE",
+			"garden": "DIGITAL GARDEN"
+		},
+		"contact_links": {
+			"consultation": "Schedule Consultation",
+			"resume": "Download Resume",
+			"contact": "Contact Me"
+		}
+	},
 	"footer": {
 		"conclusion": {
 			"title": "THAT'S A WRAP!",
