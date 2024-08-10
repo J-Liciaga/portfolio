@@ -5,7 +5,7 @@ import { getOptions } from "./settings";
 
 const initI18next = async (
 	lng: string,
-	ns: string | string[],
+	ns: string | string[] | any,
 ): Promise<i18n> => {
 	const i18nInstance = createInstance();
 	await i18nInstance
@@ -24,7 +24,7 @@ const initI18next = async (
 
 export async function useTranslation(
 	lng: string,
-	ns?: string | string[],
+	ns?: string | string[] | any,
 	options: {
 		keyPrefix?: string;
 	} = {},

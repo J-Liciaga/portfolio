@@ -31,7 +31,7 @@ export default async function RootLayout({
 			<body>
 				<HeaderNavigation />
 				<main className="min-h-screen min-w-screen">{children}</main>
-				<FooterNavigation />
+				<FooterNavigation lng={lng} />
 				<Analytics />
 				<SpeedInsights />
 				<Toaster />
