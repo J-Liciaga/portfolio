@@ -1,6 +1,121 @@
 {
 	"page": {
-		"section_title": "Experience",
-		"section_intro": "My journey spans the full spectrum of tech environments. In startups, I've turned bold ideas into reality, crafting MVPs and scaling systems on tight budgets. In Fortune 500 giants, I've led global digital transformations and implemented cutting-edge AI solutions. This unique blend of startup agility and enterprise robustness brings a holistic perspective to every project, across industries from fintech to cybersecurity."
+		"title": "Experience",
+		"intro": "My journey spans the full spectrum of tech environments. In startups, I've turned bold ideas into reality, crafting MVPs and scaling systems on tight budgets. In Fortune 500 giants, I've led global digital transformations and implemented cutting-edge AI solutions. This unique blend of startup agility and enterprise robustness brings a holistic perspective to every project, across industries from fintech to cybersecurity."
+	},
+	"arista-networks": {
+		"company": "Arista Networks",
+		"title": "Staff Software Engineer",
+		"dates": "December 2022 – Present",
+		"duties": [
+			"Developed a proprietary AI chatbot using Falcon-180b, RAG search, and Knowledge Graphs, boosting internal process efficiency by 42%.",
+			"Engineered ML backend microservices, providing data science tools that increased team productivity by 35%.",
+			"Created Spark and Python libraries, and Terraform templates, reducing development time by 30% across projects.",
+			"Orchestrated container-based deployments with Docker and Kubernetes, improving application scalability by 50% and reducing downtime by 60%.",
+			"Implemented a CI/CD pipeline with Github Actions, automating 90% of deployment processes and reducing release cycles from weeks to days."
+		]
+	},
+	"ava-research": {
+		"company": "AVA.AI",
+		"title": "Founder",
+		"dates": "January 2022 – July 2024",
+		"duties": [
+			"Engineered proprietary AI chatbot using OpenAI GPT-4, RAG search, and Knowledge Graphs, boosting internal process efficiency by 42% and generative accuracy by 75%",
+			"Architected ML backend microservices, delivering data science tools that accelerated team productivity by 30%.",
+			"Developed Spark and Python libraries with Terraform templates, reducing development time by 25% across projects.",
+			"Implemented Docker and Kubernetes for container-based deployments, improving application scalability by 40% and cutting downtime by 50%.",
+			"Spearheaded an early beta startup initiative, securing $100K in pre-seed funding and growing the user base from 0 to 1,000 select student users in 1 month on early beta launch."
+		]
+	},
+	"mido-lotto": {
+		"company": "Mido Lotto",
+		"title": "Team Lead / Front-End Architect",
+		"dates": "May 2021 – December 2022",
+		"duties": [
+			"Led multinational teams across Vietnam and US, implementing daily stand-ups that improved cross-discipline coordination by 40%.",
+			"Established cross-time zone communication strategies, reducing project delays by 30% and increasing team productivity by 25%.",
+			"Optimized resource allocation and project timelines, resulting in 20% faster project completions and 15% cost savings.",
+			"Implemented mentorship programs and professional development initiatives, leading to 35% increase in team skill acquisition and 20% higher retention rates.",
+			"Navigated complex regulatory landscapes for Progressive Web Application, achieving 100% compliance and reducing legal risks by 50%",
+			"Architected Mido's PWA with strict adherence to government regulations, enhancing user trust and increasing user base by 40%.",
+			"Revamped hiring practices, reducing time-to-hire by 25% and improving new hire performance ratings by 30%."
+		]
+	},
+	"app-evolve": {
+		"company": "AppEvolve",
+		"title": "Senior Full-Stack Software Engineer",
+		"dates": "November 2020 – May 2021",
+		"duties": [
+			"Collaborated closely with cross-functional teams, translating wireframes and designs into fully functional features, reducing time-to-market by 20%.",
+			"Spearheaded development of a comprehensive in-house UI library, creating 50+ reusable, cross-platform components that saved 100+ development hours monthly and improved consistency across projects by 80%.",
+			"Revolutionized Test-Driven Development practices, increasing unit testing coverage from 20% to 75%, resulting in a 40% reduction in post-release defects and enhancing overall product quality.",
+			"Implemented a microservices architecture, decoupling a monolithic application into 12 independent services, improving system scalability and reducing deployment time by 60%.",
+			"Optimized database queries and implemented caching strategies, resulting in a 70% reduction in average page load time and a 25% increase in user retention."
+		]
+	},
+	"cisco": {
+		"company": "Cisco / OpenDNS",
+		"title": "Senior Full-Stack Software Engineer",
+		"dates": "March 2020 – April 2021",
+		"duties": [
+			"Led data analysis to optimize cloud services, reducing system latency by 40% and increasing application efficiency by 25%.",
+			"Implemented real-time monitoring, cutting issue detection time from 2 hours to 10 minutes and improving service uptime to 99.9%.",
+			"Introduced agile methodologies and regular code reviews, accelerating development cycles by 30% and reducing critical bugs by 50%.",
+			"Mentored 5 junior team members, resulting in 25% faster promotion rates and 20% increase in team problem-solving efficiency.",
+			"Facilitated cross-functional collaboration, achieving 95% project-business alignment and 40% improvement in stakeholder satisfaction."
+		]
+	},
+	"evertel": {
+		"company": "Evertel",
+		"title": "Senior Full-Stack Software Engineer",
+		"dates": "March 2020 – April 2021",
+		"duties": [
+			"Led the transformation of wireframes into high-performance web applications, reducing development time by 30% and increasing first-time user adoption by 45%.",
+			"Implemented CJIS-compliant security protocols, achieving zero data breaches and 100% compliance in sensitive information handling across all applications.",
+			"Leveraged user behavior analytics to design intuitive interfaces, resulting in a 50% decrease in user support tickets and a 35% increase in user engagement metrics.",
+			"Spearheaded the modernization of a 10-year-old legacy codebase, improving application speed by 60% and reducing maintenance costs by 40% annually.",
+			"Developed a library of 20+ reusable components and APIs, accelerating development cycles by 25% and ensuring 90% code consistency across projects.",
+			"Implemented a comprehensive testing strategy, reducing post-release defects by 75% and achieving a 99.9% uptime for mission-critical applications.",
+			"Orchestrated client communications, conducting bi-weekly progress meetings that resulted in a 95% client satisfaction rate and 40% increase in repeat business.",
+			"Optimized applications for SEO, cross-platform functionality, and accessibility, boosting organic traffic by 70% and expanding the user base across 5 additional device types."
+		]
+	},
+	"florida-blue": {
+		"company": "Florida Blue",
+		"title": "Senior Full-Stack Software Engineer",
+		"dates": "June 2018 – Feb 2020",
+		"duties": [
+			"Engineered robust components and RESTful APIs, improving system integration efficiency by 40% and reducing API response times by 25%.",
+			"Provided critical production support with 24/7 on-call availability, resolving 98% of issues within SLA and reducing system downtime by 60%.",
+			"Conducted comprehensive user behavior analysis, leading to UX improvements that increased user engagement by 30% and reduced bounce rates by 20%.",
+			"Mentored 5 junior developers, accelerating their proficiency and reducing onboarding time by 3 weeks on average.",
+			"Transformed complex design concepts into clean, efficient code, consistently delivering features 10% ahead of schedule.",
+			"Implemented responsive design strategies, ensuring seamless functionality across 50+ device types and boosting mobile user satisfaction by 45%.",
+			"Executed rigorous testing protocols, reducing bug incidence by 35% and improving overall system stability by 28%."
+		]
+	},
+	"launch-peer": {
+		"company": "LaunchPeer",
+		"title": "Senior Full-Stack Software Engineer",
+		"dates": "June 2018 – August 2019",
+		"duties": [
+			"Crafted an engaging front-end application with intuitive UI/UX, enhancing user satisfaction and retention.",
+			"Conducted in-depth user behavior analysis to drive data-informed design decisions and optimize user experience.",
+			"Architected and maintained a robust, scalable server infrastructure and database system, ensuring 99.9% uptime.",
+			"Implemented responsive design principles, achieving seamless functionality across 50+ device types and increasing mobile traffic by 35%.",
+			"Executed rigorous quality assurance protocols, reducing bug reports by 40% and improving overall system performance by 25%."
+		]
+	},
+	"elevate-entertainment": {
+		"company": "Elevate",
+		"title": "Team Lead / Full-Stack Software Engineer",
+		"dates": "January 2014 – June 2018",
+		"duties": [
+			"Designed and implemented scalable app architecture, developing reusable components and RESTful APIs that reduced development time by 30%.",
+			"Optimized cross-platform performance, achieving 99% responsiveness across 100+ web-capable devices and improving load times by 40%.",
+			"Led code reviews and mentored junior developers, increasing team productivity by 25% and reducing critical bugs in production by 50%.",
+			"Collaborated closely with design teams to translate concepts into functional, user-centric features, enhancing overall product usability.",
+			"Managed client relationships and project scoping, accurately estimating timelines and resources for 15+ projects with 95% on-time delivery."
+		]
 	}
 }
