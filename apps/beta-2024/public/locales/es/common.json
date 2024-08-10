@@ -1,0 +1,12 @@
+{
+	"testimonials": {
+		"title": "Here's What Others Have To Say"
+	},
+	"footer": {
+		"portfolio_links": {
+			"about_me_link": "About Me",
+			"services_link": "Services",
+			"projects_link": "Case Studies & Projects"
+		}
+	}
+}

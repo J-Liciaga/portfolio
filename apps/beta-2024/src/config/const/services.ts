@@ -19,7 +19,7 @@ const SERVICES = [
 	},
 ];
 
-type SERVICES = [
+type S = [
 	{
 		title: string;
 		description: string;
@@ -28,7 +28,7 @@ type SERVICES = [
 ];
 
 export default function SERVICES_FACTORY(lng: string) {
-	const output: any[] | SERVICES = [];
+	const output: any[] | S = [];
 	const { t } = useTranslation(lng, "services");
 
 	SERVICES.map(({ id, link }) => {

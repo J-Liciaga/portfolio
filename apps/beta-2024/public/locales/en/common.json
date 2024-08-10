@@ -1,0 +1,16 @@
+{
+	"testimonials": {
+		"title": "Here's What Others Have To Say"
+	},
+	"footer": {
+		"conclusion": {
+			"title": "THAT'S A WRAP!",
+			"outro": "Thank you for stopping by. This site was designed in Figma and built using Cursor. If you like what you've seen, want to work together, or just want to chat, feel free to reach out. I'm always interested in new challenges."
+		},
+		"portfolio_links": {
+			"about_me_link": "About Me",
+			"services_link": "Services",
+			"projects_link": "Case Studies & Projects"
+		}
+	}
+}
