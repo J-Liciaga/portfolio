@@ -3,9 +3,7 @@ import { languages } from "@2024/config/i18n/settings";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
-	DropdownMenuItem,
 	DropdownMenuLabel,
-	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@lucky-ui/components/dropdown-menu";
 import { GlobeIcon } from "@radix-ui/react-icons";
@@ -19,13 +17,19 @@ type LanguagePickerProps = {
 export default function LanguagePicker({ lng }: LanguagePickerProps) {
 	const pathname = usePathname();
 	const { t } = useTranslation(lng, "common");
-	const pathnameWithoutLang = pathname.replace(`/${lng}`, "") || "/";
+
+	const getPath = (locale: string) => {
+		if (!pathname) return "/";
+		const segments = pathname.split("/");
+		segments[1] = locale;
+		return segments.join("/");
+	};
 
 	const render_items = () => {
 		return languages.map(lang => (
 			<DropdownMenuLabel key={lang}>
 				<Link
-					href={`/${lang}${pathnameWithoutLang}`}
+					href={getPath(lang)}
 					className={lang === lng ? "active" : ""}
 				>
 					{t(`language.${lang}`)}
