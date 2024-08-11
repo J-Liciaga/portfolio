@@ -1,3 +1,4 @@
 #!/usr/bin/bash
 
 yarn workspace:format
+yarn nx affected -t build --base=dev
