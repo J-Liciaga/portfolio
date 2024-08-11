@@ -7,8 +7,10 @@ export default function RootPage() {
 	const acceptLanguage = headersList.get("accept-language");
 
 	let lng = fallbackLng;
+
 	if (acceptLanguage) {
 		lng = acceptLanguage.split(",")[0].split("-")[0];
+
 		if (!languages.includes(lng)) {
 			lng = fallbackLng;
 		}

@@ -19,6 +19,7 @@ import {
 	PROJECT_LINKS_FACTORY,
 	SOCIAL_LINKS,
 } from "@2024/config/const/links";
+import LanguagePicker from "../atoms/language-picker";
 
 type HeaderNavigationProps = {
 	lng: string;
@@ -50,6 +51,9 @@ export default function HeaderNavigation({ lng }: HeaderNavigationProps) {
 						<Logo />
 					</div>
 					<div className="flex justify-center items-center space-x-4 ">
+						<div>
+							<LanguagePicker lng={lng} />
+						</div>
 						<div>
 							<Button
 								variant="outline"

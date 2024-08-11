@@ -1,22 +1,22 @@
 {
 	"page": {
-		"section_title": "Services",
-		"section_intro": "I offer comprehensive software engineering solutions with a focus on AI and machine learning. My services span full-stack development, cloud architecture, and data engineering, all underpinned by a commitment to security and performance. Leveraging cutting-edge technologies, I design and implement scalable, efficient systems that drive innovation. From leading cross-functional teams to modernizing legacy systems, I bring a wealth of experience to every project. Whether you're looking to optimize your development processes, implement AI-driven solutions, or transform your digital infrastructure, I have the expertise to turn your vision into reality."
+		"section_title": "Servicios",
+		"section_intro": "Ofrezco soluciones integrales de ingeniería de software con un enfoque en IA y aprendizaje automático. Mis servicios abarcan desarrollo full-stack, arquitectura en la nube e ingeniería de datos, todo respaldado por un compromiso con la seguridad y el rendimiento. Aprovechando tecnologías de vanguardia, diseño e implemento sistemas escalables y eficientes que impulsan la innovación. Desde liderar equipos multifuncionales hasta modernizar sistemas heredados, aporto una gran experiencia a cada proyecto. Ya sea que busque optimizar sus procesos de desarrollo, implementar soluciones impulsadas por IA o transformar su infraestructura digital, tengo la experiencia para convertir su visión en realidad."
 	},
 	"front-end": {
 		"title": "Front-End",
-		"desc": "I build lightning-fast, accessible mobile & web applications that delight users and drive results. Optimized for speed, crafted for inclusivity, and engineered for cost-efficiency."
+		"desc": "Construyo aplicaciones móviles y web ultrarrápidas y accesibles que deleitan a los usuarios y producen resultados. Optimizadas para la velocidad, diseñadas para la inclusividad y desarrolladas para la eficiencia de costos."
 	},
 	"back-end": {
 		"title": "Back-End",
-		"desc": "I architect robust, scalable server-side systems that power seamless user experiences. From efficient APIs to high-performance databases, I build secure, optimized backends that handle complex operations with ease."
+		"desc": "Arquitecto sistemas robustos y escalables del lado del servidor que potencian experiencias de usuario fluidas. Desde APIs eficientes hasta bases de datos de alto rendimiento, construyo backends seguros y optimizados que manejan operaciones complejas con facilidad."
 	},
 	"ml-ai": {
-		"title": "ML & Gen AI",
-		"desc": "I build AI systems that generate content, answer queries, and automate complex tasks. From custom chatbots and virtual assistants to text summarization and code generation tools, I leverage cutting-edge language models to enhance productivity and innovation."
+		"title": "ML & IA Generativa",
+		"desc": "Construyo sistemas de IA que generan contenido, responden consultas y automatizan tareas complejas. Desde chatbots personalizados y asistentes virtuales hasta herramientas de resumen de texto y generación de código, aprovecho modelos de lenguaje de vanguardia para mejorar la productividad y la innovación."
 	},
 	"cloud": {
-		"title": "Cloud",
-		"desc": "I simulate advanced cyber threats to fortify your defenses. From penetration testing and social engineering to custom exploit development, I uncover vulnerabilities before real attackers do."
+		"title": "Nube",
+		"desc": "Simulo amenazas cibernéticas avanzadas para fortalecer sus defensas. Desde pruebas de penetración e ingeniería social hasta desarrollo de exploits personalizados, descubro vulnerabilidades antes de que lo hagan los atacantes reales."
 	}
 }

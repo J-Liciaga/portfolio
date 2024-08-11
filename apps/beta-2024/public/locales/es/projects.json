@@ -1,22 +1,22 @@
 {
 	"page": {
-		"section_title": "Case Studies & Projects",
-		"section_intro": "My portfolio showcases a diverse range of innovative solutions that push the boundaries of technology. From developing cutting-edge AI chatbots to architecting scalable cloud infrastructures, each project represents a journey of discovery and innovation. Dive in to see how I'm shaping the future of technology through continuous learning and bold experimentation. These case studies not only showcase technical expertise but also highlight my ability to lead teams, navigate complex regulatory environments, and deliver solutions that drive tangible business value."
+		"section_title": "Estudios de Caso y Proyectos",
+		"section_intro": "Mi portafolio muestra una gama diversa de soluciones innovadoras que amplían los límites de la tecnología. Desde el desarrollo de chatbots de IA de vanguardia hasta la arquitectura de infraestructuras de nube escalables, cada proyecto representa un viaje de descubrimiento e innovación. Sumérgete para ver cómo estoy dando forma al futuro de la tecnología a través del aprendizaje continuo y la experimentación audaz. Estos estudios de caso no solo muestran experiencia técnica, sino que también destacan mi capacidad para liderar equipos, navegar entornos regulatorios complejos y entregar soluciones que generan valor comercial tangible."
 	},
 	"evlware": {
 		"label": "EVLWARE",
-		"desc": "An AI-powered penetration testing framework that automates and enhances cybersecurity assessments using machine learning and advanced security tools."
+		"desc": "Un marco de pruebas de penetración impulsado por IA que automatiza y mejora las evaluaciones de ciberseguridad utilizando aprendizaje automático y herramientas de seguridad avanzadas."
 	},
 	"wave": {
 		"label": "WAVE PLATFORMS",
-		"desc": "An innovative social network using advanced tech for intelligent matching and real-time communication. Focused on privacy and scalability, it delivers a seamless, engaging user experience."
+		"desc": "Una red social innovadora que utiliza tecnología avanzada para emparejamientos inteligentes y comunicación en tiempo real. Centrada en la privacidad y la escalabilidad, ofrece una experiencia de usuario fluida y atractiva."
 	},
 	"garden": {
-		"label": "DIGITAL GARDEN",
-		"desc": "A personalized online space for cultivating and sharing ideas. This platform transforms note-taking into an interconnected web of knowledge."
+		"label": "JARDÍN DIGITAL",
+		"desc": "Un espacio en línea personalizado para cultivar y compartir ideas. Esta plataforma transforma la toma de notas en una red interconectada de conocimiento."
 	},
 	"ava": {
 		"label": "AVA RESEARCH",
-		"desc": "Academic Virtual Assistants, an innovative platform revolutionizing information access and knowledge management. Using advanced AI, it provides instant, accurate answers to complex queries, accelerating research and enhancing productivity for organizations and academic entities."
+		"desc": "Asistentes Virtuales Académicos, una plataforma innovadora que revoluciona el acceso a la información y la gestión del conocimiento. Utilizando IA avanzada, proporciona respuestas instantáneas y precisas a consultas complejas, acelerando la investigación y mejorando la productividad para organizaciones y entidades académicas."
 	}
 }

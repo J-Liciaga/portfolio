@@ -10,7 +10,7 @@ import {
 	IconPhoneCheck,
 	IconDownload,
 	IconAtom,
-	IconMessage2Check,
+	// IconMessage2Check,
 	IconBrandLinkedin,
 } from "@tabler/icons-react";
 import { useTranslation } from "../i18n/client";
@@ -97,13 +97,6 @@ const CONTACT_LINKS = [
 		href: "/josiah-liciaga-resume-2024.pdf",
 		icon: (
 			<IconDownload className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-		),
-	},
-	{
-		id: "contact",
-		href: "/contact-me",
-		icon: (
-			<IconMessage2Check className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 ];

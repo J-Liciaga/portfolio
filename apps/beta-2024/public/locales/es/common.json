@@ -1,36 +1,50 @@
 {
+	"language": {
+		"en": "🇺🇸 English",
+		"es": "🇪🇸 Spanish",
+		"fr": "🇫🇷 French",
+		"de": "🇩🇪 Deutsch",
+		"jp": "🇯🇵 Japanese",
+		"lang_code": {
+			"en": "🇺🇸 ENG",
+			"es": "🇪🇸 SPA",
+			"fr": "🇫🇷 FR",
+			"de": "🇩🇪 DE",
+			"jp": "🇯🇵 JP"
+		}
+	},
 	"testimonials": {
-		"title": "Here's What Others Have To Say"
+		"title": "Esto es lo que otros tienen que decir"
 	},
 	"header": {
 		"portfolio_links": {
-			"home": "Home",
-			"about": "About Me",
-			"services": "Services",
-			"experience": "My Experience",
-			"projects": "Case Studies & Projects"
+			"home": "Inicio",
+			"about": "Sobre mí",
+			"services": "Servicios",
+			"experience": "Experiencia",
+			"projects": "Proyectos"
 		},
 		"project_links": {
-			"wave": "WAVE PLATFORMS",
+			"wave": "WAVE PLATAFORMS",
 			"ava": "AVA RESEARCH",
 			"evlware": "EVLWARE",
-			"garden": "DIGITAL GARDEN"
+			"garden": "JARDÍN DIGITAL"
 		},
 		"contact_links": {
-			"consultation": "Schedule Consultation",
-			"resume": "Download Resume",
-			"contact": "Contact Me"
+			"consultation": "Programar consulta",
+			"resume": "Descargar currículum",
+			"contact": "Contáctame"
 		}
 	},
 	"footer": {
 		"conclusion": {
-			"title": "THAT'S A WRAP!",
-			"outro": "Thank you for stopping by. This site was designed in Figma and built using Cursor. If you like what you've seen, want to work together, or just want to chat, feel free to reach out. I'm always interested in new challenges."
+			"title": "¡ESO ES TODO!",
+			"outro": "Gracias por tu visita. Este sitio fue diseñado en Figma y construido usando Cursor. Si te gusta lo que has visto, quieres trabajar juntos o simplemente quieres charlar, no dudes en contactarme. Siempre estoy interesado en nuevos desafíos."
 		},
 		"portfolio_links": {
-			"about_me_link": "About Me",
-			"services_link": "Services",
-			"projects_link": "Case Studies & Projects"
+			"about_me_link": "Sobre mí",
+			"services_link": "Servicios",
+			"projects_link": "Proyectos"
 		}
 	}
 }
