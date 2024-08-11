@@ -6,11 +6,11 @@
 		"de": "🇩🇪 Deutsch",
 		"jp": "🇯🇵 Japanese",
 		"lang_code": {
-			"en": "🇺🇸 ENG",
-			"es": "🇪🇸 SPA",
-			"fr": "🇫🇷 FR",
-			"de": "🇩🇪 DE",
-			"jp": "🇯🇵 JP"
+			"en": "ENG",
+			"es": "SPA",
+			"fr": "FR",
+			"de": "DE",
+			"jp": "JP"
 		}
 	},
 	"testimonials": {
