@@ -1,0 +1,22 @@
+{
+	"page": {
+		"section_title": "Case Studies & Projects",
+		"section_intro": "My portfolio showcases a diverse range of innovative solutions that push the boundaries of technology. From developing cutting-edge AI chatbots to architecting scalable cloud infrastructures, each project represents a journey of discovery and innovation. Dive in to see how I'm shaping the future of technology through continuous learning and bold experimentation. These case studies not only showcase technical expertise but also highlight my ability to lead teams, navigate complex regulatory environments, and deliver solutions that drive tangible business value."
+	},
+	"evlware": {
+		"label": "EVLWARE",
+		"desc": "An AI-powered penetration testing framework that automates and enhances cybersecurity assessments using machine learning and advanced security tools."
+	},
+	"wave": {
+		"label": "WAVE PLATFORMS",
+		"desc": "An innovative social network using advanced tech for intelligent matching and real-time communication. Focused on privacy and scalability, it delivers a seamless, engaging user experience."
+	},
+	"garden": {
+		"label": "DIGITAL GARDEN",
+		"desc": "A personalized online space for cultivating and sharing ideas. This platform transforms note-taking into an interconnected web of knowledge."
+	},
+	"ava": {
+		"label": "AVA RESEARCH",
+		"desc": "Academic Virtual Assistants, an innovative platform revolutionizing information access and knowledge management. Using advanced AI, it provides instant, accurate answers to complex queries, accelerating research and enhancing productivity for organizations and academic entities."
+	}
+}

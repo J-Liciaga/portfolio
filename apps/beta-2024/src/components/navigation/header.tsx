@@ -14,15 +14,24 @@ import Logo from "@2024/components/atoms/logo";
 import { Sidebar, SidebarBody, SidebarLink } from "@lucky-ui/animated/sidebar";
 import Separator from "@lucky-ui/components/separator";
 import {
-	CONTACT_LINKS,
-	PORTFOLIO_LINKS,
-	PROJECT_LINKS,
+	CONTACT_LINKS_FACTORY,
+	PORTFOLIO_LINKS_FACTORY,
+	PROJECT_LINKS_FACTORY,
 	SOCIAL_LINKS,
 } from "@2024/config/const/links";
+import LanguagePicker from "../atoms/language-picker";
 
-export default function HeaderNavigation() {
+type HeaderNavigationProps = {
+	lng: string;
+};
+
+export default function HeaderNavigation({ lng }: HeaderNavigationProps) {
 	const scrollDirection = useScrollDirection();
 	const [open, setOpen] = useState(false);
+
+	const PORTFOLIO_LINKS = PORTFOLIO_LINKS_FACTORY(lng);
+	const CONTACT_LINKS = CONTACT_LINKS_FACTORY(lng);
+	const PROJECT_LINKS = PROJECT_LINKS_FACTORY(lng);
 
 	const handle_menu = () => {
 		setOpen(!open);
@@ -42,6 +51,9 @@ export default function HeaderNavigation() {
 						<Logo />
 					</div>
 					<div className="flex justify-center items-center space-x-4 ">
+						<div>
+							<LanguagePicker lng={lng} />
+						</div>
 						<div>
 							<Button
 								variant="outline"
@@ -86,25 +98,25 @@ export default function HeaderNavigation() {
 				<SidebarBody className="justify-between gap-10">
 					<div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
 						<div className="mt-8 flex flex-col gap-2">
-							{PORTFOLIO_LINKS.map((link, idx) => (
+							{PORTFOLIO_LINKS.map((link: any, idx: number) => (
 								<SidebarLink key={idx} link={link} />
 							))}
 						</div>
 						<Separator className="my-4" />
 						<div className="flex flex-col gap-2">
-							{PROJECT_LINKS.map((link, idx) => (
+							{PROJECT_LINKS.map((link: any, idx: number) => (
 								<SidebarLink key={idx} link={link} />
 							))}
 						</div>
 						<Separator className="my-4" />
 						<div className="flex flex-col gap-2">
-							{CONTACT_LINKS.map((link, idx) => (
+							{CONTACT_LINKS.map((link: any, idx: number) => (
 								<SidebarLink key={idx} link={link} />
 							))}
 						</div>
 						<Separator className="my-4" />
 						<div className="flex flex-col gap-2">
-							{SOCIAL_LINKS.map((link, idx) => (
+							{SOCIAL_LINKS.map((link: any, idx: number) => (
 								<SidebarLink key={idx} link={link} />
 							))}
 						</div>

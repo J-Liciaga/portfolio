@@ -8,9 +8,14 @@ import Logo from "@2024/components/atoms/logo";
 import ResumeDownloadBtn from "@2024/components/atoms/resume-download-btn";
 import { ContactForm } from "@2024/components/atoms/contact-form";
 import {
-	PORTFOLIO_LINKS,
+	PORTFOLIO_LINK_FACTORY,
 	SOCIALS_LINKS,
 } from "@2024/config/const/footer-links";
+import { useTranslation } from "@2024/config/i18n/client";
+
+type FooterNavigationProps = {
+	lng: string;
+};
 
 const styles = {
 	container: "mt-32 py-4 space-y-8",
@@ -44,7 +49,11 @@ const styles = {
 	credits_creator: "text-primary font-bold",
 } as const;
 
-export default function FooterNavigation() {
+export default function FooterNavigation({ lng }: FooterNavigationProps) {
+	const { t } = useTranslation(lng, "common");
+
+	const PORTFOLIO_LINKS = PORTFOLIO_LINK_FACTORY(lng);
+
 	const render_links = (links: any) => {
 		return links.map(({ id, label, href }: any) => (
 			<div key={id}>
@@ -65,15 +74,10 @@ export default function FooterNavigation() {
 					<div className={styles.wrap_grid}>
 						<div className={styles.wrap_top_row}>
 							<div className={styles.wrap_title}>
-								THAT&apos;S A WRAP!
+								{t("footer.conclusion.title")}
 							</div>
 							<div className={styles.wrap_desc}>
-								That&apos;s a wrap! Thank you for stopping by.
-								This site was designed in Figma and built using
-								Cursor. If you like what you&apos;ve seen, want
-								to work together, or just want to chat, feel
-								free to reach out. I&apos;m always interested in
-								new projects and case studies.
+								{t("footer.conclusion.outro")}
 							</div>
 						</div>
 						<div className={styles.wrap_btm_row}>

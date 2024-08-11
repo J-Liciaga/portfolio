@@ -1,0 +1,50 @@
+{
+	"language": {
+		"en": "🇺🇸 English",
+		"es": "🇪🇸 Spanish",
+		"fr": "🇫🇷 French",
+		"de": "🇩🇪 Deutsch",
+		"jp": "🇯🇵 Japanese",
+		"lang_code": {
+			"en": "ENG",
+			"es": "SPA",
+			"fr": "FR",
+			"de": "DE",
+			"jp": "JP"
+		}
+	},
+	"testimonials": {
+		"title": "Esto es lo que otros tienen que decir"
+	},
+	"header": {
+		"portfolio_links": {
+			"home": "Inicio",
+			"about": "Sobre mí",
+			"services": "Servicios",
+			"experience": "Experiencia",
+			"projects": "Proyectos"
+		},
+		"project_links": {
+			"wave": "WAVE PLATAFORMS",
+			"ava": "AVA RESEARCH",
+			"evlware": "EVLWARE",
+			"garden": "JARDÍN DIGITAL"
+		},
+		"contact_links": {
+			"consultation": "Programar consulta",
+			"resume": "Descargar currículum",
+			"contact": "Contáctame"
+		}
+	},
+	"footer": {
+		"conclusion": {
+			"title": "¡ESO ES TODO!",
+			"outro": "Gracias por tu visita. Este sitio fue diseñado en Figma y construido usando Cursor. Si te gusta lo que has visto, quieres trabajar juntos o simplemente quieres charlar, no dudes en contactarme. Siempre estoy interesado en nuevos desafíos."
+		},
+		"portfolio_links": {
+			"about_me_link": "Sobre mí",
+			"services_link": "Servicios",
+			"projects_link": "Proyectos"
+		}
+	}
+}

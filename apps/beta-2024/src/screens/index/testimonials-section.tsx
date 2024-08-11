@@ -2,6 +2,11 @@ import { InfiniteMovingCards } from "@lucky-ui/animated/infinite-moving-cards";
 import { testimonials } from "@2024/config/const/testimonials";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import SectionTitle from "@2024/components/atoms/section-title";
+import { useTranslation } from "@2024/config/i18n/client";
+
+type TestimonialsSectionProps = {
+	lng: string;
+};
 
 const styles = {
 	container: "px-12 space-y-8",
@@ -10,10 +15,12 @@ const styles = {
 	section_text: `${bebas_neue.className} font-bold text-[4rem] tracking-wide`,
 } as const;
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ lng }: TestimonialsSectionProps) {
+	const { t } = useTranslation(lng, "common");
+
 	return (
 		<div className={styles.container}>
-			<SectionTitle num={5} title={"Here's What Others Have To Say"} />
+			<SectionTitle num={5} title={t("testimonials.title")} />
 			<InfiniteMovingCards
 				items={testimonials}
 				direction="right"

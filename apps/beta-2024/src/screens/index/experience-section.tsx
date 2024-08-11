@@ -1,5 +1,6 @@
 import SectionTitle from "@2024/components/atoms/section-title";
-import { EXPERIENCE } from "@2024/config/const/experience";
+import EXPERIENCE_FACTORY from "@2024/config/const/experience";
+import { useTranslation } from "@2024/config/i18n/client";
 import { bebas_neue } from "@lucky-ui/assets/fonts";
 import {
 	Accordion,
@@ -9,40 +10,56 @@ import {
 } from "@lucky-ui/components/accordion";
 import { IconCircleFilled } from "@tabler/icons-react";
 
+type ExperienceSectionProps = {
+	lng: string;
+};
+
 const styles = {
 	inner_wrapper: "px-12 space-y-8",
 	accordion_box: "w-full",
 	accordion: "w-full",
+	// accordion
+	acc_trigger: "flex md:space-x-2 | font-semibold",
+	acc_trigger_title: `hidden md:block ${bebas_neue.className} text-red-800 font-bold text-[1.5rem] tracking-wide`,
+	acc_trigger_comp: `${bebas_neue.className} font-bold text-[1.5rem] tracking-wide`,
+	acc_content_wrapper: "flex flex-col | space-y-4",
+	acc_content_mob_title:
+		"md:hidden uppercase text-red-800 text-[1.15rem] font-bold",
+	acc_content_dates: "text-[1.15rem] font-bold",
+	acc_content_list: "space-y-2",
+	acc_content_list_item:
+		"w-5/6 flex space-x-2 items-center | text-[1rem] font-semibold",
 } as const;
 
-export default function ExperienceSection() {
+export default function ExperienceSection({ lng }: ExperienceSectionProps) {
+	const { t } = useTranslation(lng, "experience");
+	const EXPERIENCE = EXPERIENCE_FACTORY(lng);
+
 	const render_experience = () => {
 		return EXPERIENCE.map(({ id, title, company, duties, dates }, idx) => (
 			<AccordionItem key={id} value={id}>
 				<AccordionTrigger>
-					<div className="flex md:space-x-2 | font-semibold">
-						<span
-							className={`hidden md:block ${bebas_neue.className} text-red-800 font-bold text-[1.5rem] tracking-wide`}
-						>
+					<div className={styles.acc_trigger}>
+						<span className={styles.acc_trigger_title}>
 							{title} |
 						</span>
-						<span
-							className={`${bebas_neue.className} font-bold text-[1.5rem] tracking-wide`}
-						>
+						<span className={styles.acc_trigger_comp}>
 							{company}
 						</span>
 					</div>
 				</AccordionTrigger>
 				<AccordionContent>
-					<div className="flex flex-col | space-y-4">
-						<div className="md:hidden uppercase text-red-800 text-[1.15rem] font-bold">
+					<div className={styles.acc_content_wrapper}>
+						<div className={styles.acc_content_mob_title}>
 							{title}
 						</div>
-						<div className="text-[1.15rem] font-bold">{dates}</div>
-						<ol className="space-y-2">
-							{duties.map((duty, idx) => (
+						<div className={styles.acc_content_dates}>{dates}</div>
+						<ol className={styles.acc_content_list}>
+							{duties.map((duty: string, idx: number) => (
 								<li key={`${idx}`}>
-									<div className="w-5/6 flex space-x-2 items-center | text-[1rem] font-semibold">
+									<div
+										className={styles.acc_content_list_item}
+									>
 										<span>
 											<IconCircleFilled
 												height={8}
@@ -65,16 +82,8 @@ export default function ExperienceSection() {
 			<div className={styles.inner_wrapper}>
 				<SectionTitle
 					num={3}
-					title="EXPERIENCE"
-					desc={`My journey spans the full spectrum of tech environments.
-						In startups, I've turned bold ideas into reality,
-						crafting MVPs and scaling systems on tight budgets. In
-						Fortune 500 giants, I've led global digital
-						transformations and implemented cutting-edge AI
-						solutions. This unique blend of startup agility and
-						enterprise robustness brings a holistic perspective to
-						every project, across industries from fintech to
-						cybersecurity.`}
+					title={t("page.title")}
+					desc={t("page.intro")}
 				/>
 				<div className={styles.accordion_box}>
 					<Accordion

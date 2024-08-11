@@ -1,0 +1,121 @@
+{
+	"page": {
+		"title": "Experiencia",
+		"intro": "Mi trayectoria abarca todo el espectro de entornos tecnológicos. En startups, he convertido ideas audaces en realidad, creando MVPs y escalando sistemas con presupuestos ajustados. En gigantes Fortune 500, he liderado transformaciones digitales globales e implementado soluciones de IA de vanguardia. Esta combinación única de agilidad de startup y robustez empresarial aporta una perspectiva holística a cada proyecto, en industrias desde fintech hasta ciberseguridad."
+	},
+	"arista-networks": {
+		"company": "Arista Networks",
+		"title": "Ingeniero de Software Staff",
+		"dates": "Diciembre 2022 – Presente",
+		"duties": [
+			"Desarrollé un chatbot de IA propietario utilizando Falcon-180b, búsqueda RAG y Grafos de Conocimiento, aumentando la eficiencia de los procesos internos en un 42%.",
+			"Diseñé microservicios backend de ML, proporcionando herramientas de ciencia de datos que aumentaron la productividad del equipo en un 35%.",
+			"Creé bibliotecas de Spark y Python, y plantillas de Terraform, reduciendo el tiempo de desarrollo en un 30% en todos los proyectos.",
+			"Orquesté despliegues basados en contenedores con Docker y Kubernetes, mejorando la escalabilidad de las aplicaciones en un 50% y reduciendo el tiempo de inactividad en un 60%.",
+			"Implementé un pipeline de CI/CD con Github Actions, automatizando el 90% de los procesos de despliegue y reduciendo los ciclos de lanzamiento de semanas a días."
+		]
+	},
+	"ava-research": {
+		"company": "AVA.AI",
+		"title": "Fundador",
+		"dates": "Enero 2022 – Julio 2024",
+		"duties": [
+			"Diseñé un chatbot de IA propietario utilizando OpenAI GPT-4, búsqueda RAG y Grafos de Conocimiento, aumentando la eficiencia de los procesos internos en un 42% y la precisión generativa en un 75%",
+			"Arquitecturé microservicios backend de ML, entregando herramientas de ciencia de datos que aceleraron la productividad del equipo en un 30%.",
+			"Desarrollé bibliotecas de Spark y Python con plantillas de Terraform, reduciendo el tiempo de desarrollo en un 25% en todos los proyectos.",
+			"Implementé Docker y Kubernetes para despliegues basados en contenedores, mejorando la escalabilidad de las aplicaciones en un 40% y reduciendo el tiempo de inactividad en un 50%.",
+			"Lideré una iniciativa de startup en fase beta temprana, asegurando $100K en financiación pre-semilla y aumentando la base de usuarios de 0 a 1,000 estudiantes seleccionados en 1 mes en el lanzamiento beta temprano."
+		]
+	},
+	"mido-lotto": {
+		"company": "Mido Lotto",
+		"title": "Líder de Equipo / Arquitecto Front-End",
+		"dates": "Mayo 2021 – Diciembre 2022",
+		"duties": [
+			"Lideré equipos multinacionales en Vietnam y EE.UU., implementando reuniones diarias que mejoraron la coordinación interdisciplinaria en un 40%.",
+			"Establecí estrategias de comunicación entre zonas horarias, reduciendo los retrasos de proyectos en un 30% y aumentando la productividad del equipo en un 25%.",
+			"Optimicé la asignación de recursos y los plazos de los proyectos, resultando en un 20% de finalización más rápida de proyectos y un 15% de ahorro en costos.",
+			"Implementé programas de mentoría e iniciativas de desarrollo profesional, llevando a un aumento del 35% en la adquisición de habilidades del equipo y tasas de retención un 20% más altas.",
+			"Navegué paisajes regulatorios complejos para la Aplicación Web Progresiva, logrando un 100% de cumplimiento y reduciendo los riesgos legales en un 50%",
+			"Arquitecturé la PWA de Mido con estricto cumplimiento de las regulaciones gubernamentales, mejorando la confianza del usuario y aumentando la base de usuarios en un 40%.",
+			"Renovó las prácticas de contratación, reduciendo el tiempo de contratación en un 25% y mejorando las calificaciones de desempeño de nuevos empleados en un 30%."
+		]
+	},
+	"app-evolve": {
+		"company": "App Evolve",
+		"title": "Ingeniero de Software Full-Stack Senior",
+		"dates": "Noviembre 2020 – Mayo 2021",
+		"duties": [
+			"Colaboré estrechamente con equipos multifuncionales, transformando wireframes y diseños en características completamente funcionales, reduciendo el tiempo de comercialización en un 20%.",
+			"Lideré el desarrollo de una biblioteca de UI integral interna, creando más de 50 componentes reutilizables y multiplataforma que ahorraron más de 100 horas de desarrollo mensuales y mejoraron la consistencia en los proyectos en un 80%.",
+			"Revolucioné las prácticas de Desarrollo Guiado por Pruebas, aumentando la cobertura de pruebas unitarias del 20% al 75%, resultando en una reducción del 40% en defectos post-lanzamiento y mejorando la calidad general del producto.",
+			"Implementé una arquitectura de microservicios, desacoplando una aplicación monolítica en 12 servicios independientes, mejorando la escalabilidad del sistema y reduciendo el tiempo de despliegue en un 60%.",
+			"Optimicé consultas de base de datos e implementé estrategias de caché, resultando en una reducción del 70% en el tiempo promedio de carga de página y un aumento del 25% en la retención de usuarios."
+		]
+	},
+	"cisco": {
+		"company": "Cisco / OpenDNS",
+		"title": "Ingeniero de Software Full-Stack Senior",
+		"dates": "Marzo 2020 – Abril 2021",
+		"duties": [
+			"Lideré análisis de datos para optimizar servicios en la nube, reduciendo la latencia del sistema en un 40% y aumentando la eficiencia de la aplicación en un 25%.",
+			"Implementé monitoreo en tiempo real, reduciendo el tiempo de detección de problemas de 2 horas a 10 minutos y mejorando el tiempo de actividad del servicio al 99,9%.",
+			"Introduje metodologías ágiles y revisiones de código regulares, acelerando los ciclos de desarrollo en un 30% y reduciendo los errores críticos en un 50%.",
+			"Mentoré a 5 miembros junior del equipo, resultando en tasas de promoción un 25% más rápidas y un aumento del 20% en la eficiencia de resolución de problemas del equipo.",
+			"Facilité la colaboración multifuncional, logrando un 95% de alineación proyecto-negocio y un 40% de mejora en la satisfacción de las partes interesadas."
+		]
+	},
+	"evertel": {
+		"company": "Evertel",
+		"title": "Ingeniero de Software Full-Stack Senior",
+		"dates": "Marzo 2020 – Abril 2021",
+		"duties": [
+			"Lideré la transformación de wireframes en aplicaciones web de alto rendimiento, reduciendo el tiempo de desarrollo en un 30% y aumentando la adopción de usuarios por primera vez en un 45%.",
+			"Implementé protocolos de seguridad conformes con CJIS, logrando cero violaciones de datos y 100% de cumplimiento en el manejo de información sensible en todas las aplicaciones.",
+			"Aproveché el análisis del comportamiento del usuario para diseñar interfaces intuitivas, resultando en una disminución del 50% en los tickets de soporte al usuario y un aumento del 35% en las métricas de participación del usuario.",
+			"Lideré la modernización de una base de código heredada de 10 años, mejorando la velocidad de la aplicación en un 60% y reduciendo los costos de mantenimiento en un 40% anual.",
+			"Desarrollé una biblioteca de más de 20 componentes y APIs reutilizables, acelerando los ciclos de desarrollo en un 25% y asegurando un 90% de consistencia de código en todos los proyectos.",
+			"Implementé una estrategia de pruebas integral, reduciendo los defectos post-lanzamiento en un 75% y logrando un tiempo de actividad del 99,9% para aplicaciones críticas.",
+			"Orquesté comunicaciones con clientes, realizando reuniones de progreso quincenales que resultaron en una tasa de satisfacción del cliente del 95% y un aumento del 40% en negocios recurrentes.",
+			"Optimicé aplicaciones para SEO, funcionalidad multiplataforma y accesibilidad, aumentando el tráfico orgánico en un 70% y expandiendo la base de usuarios en 5 tipos de dispositivos adicionales."
+		]
+	},
+	"florida-blue": {
+		"company": "Florida Blue",
+		"title": "Ingeniero de Software Full-Stack Senior",
+		"dates": "Junio 2018 – Febrero 2020",
+		"duties": [
+			"Diseñé componentes robustos y APIs RESTful, mejorando la eficiencia de integración del sistema en un 40% y reduciendo los tiempos de respuesta de la API en un 25%.",
+			"Proporcioné soporte crítico de producción con disponibilidad 24/7, resolviendo el 98% de los problemas dentro del SLA y reduciendo el tiempo de inactividad del sistema en un 60%.",
+			"Realicé un análisis integral del comportamiento del usuario, llevando a mejoras en la UX que aumentaron la participación del usuario en un 30% y redujeron las tasas de rebote en un 20%.",
+			"Mentoré a 5 desarrolladores junior, acelerando su competencia y reduciendo el tiempo de incorporación en 3 semanas en promedio.",
+			"Transformé conceptos de diseño complejos en código limpio y eficiente, entregando consistentemente características un 10% antes de lo programado.",
+			"Implementé estrategias de diseño responsivo, asegurando una funcionalidad perfecta en más de 50 tipos de dispositivos y aumentando la satisfacción de usuarios móviles en un 45%.",
+			"Ejecuté rigurosos protocolos de prueba, reduciendo la incidencia de errores en un 35% y mejorando la estabilidad general del sistema en un 28%."
+		]
+	},
+	"launch-peer": {
+		"company": "LaunchPeer",
+		"title": "Ingeniero de Software Full-Stack Senior",
+		"dates": "Junio 2018 – Agosto 2019",
+		"duties": [
+			"Creé una aplicación front-end atractiva con UI/UX intuitiva, mejorando la satisfacción y retención de usuarios.",
+			"Realicé un análisis en profundidad del comportamiento del usuario para impulsar decisiones de diseño informadas por datos y optimizar la experiencia del usuario.",
+			"Arquitecturé y mantuve una infraestructura de servidor robusta y escalable y un sistema de base de datos, asegurando un tiempo de actividad del 99,9%.",
+			"Implementé principios de diseño responsivo, logrando una funcionalidad perfecta en más de 50 tipos de dispositivos y aumentando el tráfico móvil en un 35%.",
+			"Ejecuté rigurosos protocolos de garantía de calidad, reduciendo los informes de errores en un 40% y mejorando el rendimiento general del sistema en un 25%."
+		]
+	},
+	"elevate-entertainment": {
+		"company": "Elevate",
+		"title": "Líder de Equipo / Ingeniero de Software Full-Stack",
+		"dates": "Enero 2014 – Junio 2018",
+		"duties": [
+			"Diseñé e implementé una arquitectura de aplicación escalable, desarrollando componentes reutilizables y APIs RESTful que redujeron el tiempo de desarrollo en un 30%.",
+			"Optimicé el rendimiento multiplataforma, logrando un 99% de capacidad de respuesta en más de 100 dispositivos compatibles con web y mejorando los tiempos de carga en un 40%.",
+			"Lideré revisiones de código y mentoré a desarrolladores junior, aumentando la productividad del equipo en un 25% y reduciendo los errores críticos en producción en un 50%.",
+			"Colaboré estrechamente con equipos de diseño para traducir conceptos en características funcionales centradas en el usuario, mejorando la usabilidad general del producto.",
+			"Gestioné relaciones con clientes y alcance de proyectos, estimando con precisión plazos y recursos para más de 15 proyectos con un 95% de entrega a tiempo."
+		]
+	}
+}

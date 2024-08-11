@@ -1,0 +1,22 @@
+{
+	"page": {
+		"section_title": "Servicios",
+		"section_intro": "Ofrezco soluciones integrales de ingeniería de software con un enfoque en IA y aprendizaje automático. Mis servicios abarcan desarrollo full-stack, arquitectura en la nube e ingeniería de datos, todo respaldado por un compromiso con la seguridad y el rendimiento. Aprovechando tecnologías de vanguardia, diseño e implemento sistemas escalables y eficientes que impulsan la innovación. Desde liderar equipos multifuncionales hasta modernizar sistemas heredados, aporto una gran experiencia a cada proyecto. Ya sea que busque optimizar sus procesos de desarrollo, implementar soluciones impulsadas por IA o transformar su infraestructura digital, tengo la experiencia para convertir su visión en realidad."
+	},
+	"front-end": {
+		"title": "Front-End",
+		"desc": "Construyo aplicaciones móviles y web ultrarrápidas y accesibles que deleitan a los usuarios y producen resultados. Optimizadas para la velocidad, diseñadas para la inclusividad y desarrolladas para la eficiencia de costos."
+	},
+	"back-end": {
+		"title": "Back-End",
+		"desc": "Arquitecto sistemas robustos y escalables del lado del servidor que potencian experiencias de usuario fluidas. Desde APIs eficientes hasta bases de datos de alto rendimiento, construyo backends seguros y optimizados que manejan operaciones complejas con facilidad."
+	},
+	"ml-ai": {
+		"title": "ML & IA Generativa",
+		"desc": "Construyo sistemas de IA que generan contenido, responden consultas y automatizan tareas complejas. Desde chatbots personalizados y asistentes virtuales hasta herramientas de resumen de texto y generación de código, aprovecho modelos de lenguaje de vanguardia para mejorar la productividad y la innovación."
+	},
+	"cloud": {
+		"title": "Nube",
+		"desc": "Simulo amenazas cibernéticas avanzadas para fortalecer sus defensas. Desde pruebas de penetración e ingeniería social hasta desarrollo de exploits personalizados, descubro vulnerabilidades antes de que lo hagan los atacantes reales."
+	}
+}

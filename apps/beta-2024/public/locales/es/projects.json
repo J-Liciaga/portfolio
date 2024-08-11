@@ -1,0 +1,22 @@
+{
+	"page": {
+		"section_title": "Estudios de Caso y Proyectos",
+		"section_intro": "Mi portafolio muestra una gama diversa de soluciones innovadoras que amplían los límites de la tecnología. Desde el desarrollo de chatbots de IA de vanguardia hasta la arquitectura de infraestructuras de nube escalables, cada proyecto representa un viaje de descubrimiento e innovación. Sumérgete para ver cómo estoy dando forma al futuro de la tecnología a través del aprendizaje continuo y la experimentación audaz. Estos estudios de caso no solo muestran experiencia técnica, sino que también destacan mi capacidad para liderar equipos, navegar entornos regulatorios complejos y entregar soluciones que generan valor comercial tangible."
+	},
+	"evlware": {
+		"label": "EVLWARE",
+		"desc": "Un marco de pruebas de penetración impulsado por IA que automatiza y mejora las evaluaciones de ciberseguridad utilizando aprendizaje automático y herramientas de seguridad avanzadas."
+	},
+	"wave": {
+		"label": "WAVE PLATFORMS",
+		"desc": "Una red social innovadora que utiliza tecnología avanzada para emparejamientos inteligentes y comunicación en tiempo real. Centrada en la privacidad y la escalabilidad, ofrece una experiencia de usuario fluida y atractiva."
+	},
+	"garden": {
+		"label": "JARDÍN DIGITAL",
+		"desc": "Un espacio en línea personalizado para cultivar y compartir ideas. Esta plataforma transforma la toma de notas en una red interconectada de conocimiento."
+	},
+	"ava": {
+		"label": "AVA RESEARCH",
+		"desc": "Asistentes Virtuales Académicos, una plataforma innovadora que revoluciona el acceso a la información y la gestión del conocimiento. Utilizando IA avanzada, proporciona respuestas instantáneas y precisas a consultas complejas, acelerando la investigación y mejorando la productividad para organizaciones y entidades académicas."
+	}
+}

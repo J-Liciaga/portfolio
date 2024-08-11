@@ -1,6 +1,6 @@
 "use client";
 
-// import InteractiveBubble from "@2024/components/atoms/interactive-bubble";
+import { useEffect } from "react";
 import {
 	AboutMeSection,
 	ExperienceSection,
@@ -9,13 +9,18 @@ import {
 	ServicesSection,
 	TestimonialsSection,
 } from "@2024/screens/index";
-import { useEffect } from "react";
+
+type IndexPageProps = {
+	params: {
+		lang: string;
+	};
+};
 
 const styles = {
 	container: "space-y-32",
 };
 
-export default function IndexPage() {
+export default function IndexPage({ params: { lang } }: IndexPageProps) {
 	useEffect(() => {
 		(async () => {
 			const LocomotiveScroll = (await import("locomotive-scroll"))
@@ -26,12 +31,12 @@ export default function IndexPage() {
 
 	return (
 		<div className={styles.container}>
-			<HeroSection />
-			<AboutMeSection />
-			<ServicesSection />
-			<ExperienceSection />
-			<ProjectsSection />
-			<TestimonialsSection />
+			<HeroSection lng={lang} />
+			<AboutMeSection lng={lang} />
+			<ServicesSection lng={lang} />
+			<ExperienceSection lng={lang} />
+			<ProjectsSection lng={lang} />
+			<TestimonialsSection lng={lang} />
 		</div>
 	);
 }

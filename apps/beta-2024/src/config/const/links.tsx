@@ -10,41 +10,42 @@ import {
 	IconPhoneCheck,
 	IconDownload,
 	IconAtom,
-	IconMessage2Check,
+	// IconMessage2Check,
 	IconBrandLinkedin,
 } from "@tabler/icons-react";
+import { useTranslation } from "../i18n/client";
 
-export const PORTFOLIO_LINKS = [
+const PORTFOLIO_LINKS = [
 	{
-		label: "Home",
+		id: "home",
 		href: "#",
 		icon: (
 			<IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "About Me",
+		id: "about",
 		href: "#about-me-section",
 		icon: (
 			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Services",
+		id: "services",
 		href: "#services-section",
 		icon: (
 			<IconTopologyRing2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Experience",
+		id: "experience",
 		href: "#experience-section",
 		icon: (
 			<IconAtom className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Case Studies & Projects",
+		id: "projects",
 		href: "#case-studies-section",
 		icon: (
 			<IconMicroscope className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
@@ -52,57 +53,50 @@ export const PORTFOLIO_LINKS = [
 	},
 ];
 
-export const PROJECT_LINKS = [
+const PROJECT_LINKS = [
 	{
-		label: "Wave Platforms",
-		href: "/projects/wave-platforms",
+		id: "wave",
+		href: (lng: string) => `/${lng}/projects/wave-platforms`,
 		icon: (
 			<IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "AVA Research",
-		href: "/projects/ava-research",
+		id: "ava",
+		href: (lng: string) => `/${lng}/projects/ava-research`,
 		icon: (
 			<IconBook className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "EVLWARE",
-		href: "/projects/evlware",
+		id: "evlware",
+		href: (lng: string) => `/${lng}/projects/evlware`,
 		icon: (
 			<IconBugOff className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Digital Garden",
-		href: "/digital-garden",
+		id: "garden",
+		href: (lng: string) => `/${lng}/projects/digital-garden`,
 		icon: (
 			<IconPlant2 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 ];
 
-export const CONTACT_LINKS = [
+const CONTACT_LINKS = [
 	{
-		label: "Schedule Consultation",
+		id: "consultation",
 		href: "https://calendly.com/josiah-liciaga",
 		icon: (
 			<IconPhoneCheck className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 	{
-		label: "Download Resume",
+		id: "resume",
 		href: "/josiah-liciaga-resume-2024.pdf",
 		icon: (
 			<IconDownload className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-		),
-	},
-	{
-		label: "Contact Me",
-		href: "/contact-me",
-		icon: (
-			<IconMessage2Check className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 ];
@@ -116,10 +110,58 @@ export const SOCIAL_LINKS = [
 		),
 	},
 	{
-		label: "Linkedin",
+		label: "LinkedIn",
 		href: "https://linkedin.com/in/josiah-liciaga-silva",
 		icon: (
 			<IconBrandLinkedin className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
 		),
 	},
 ];
+
+export function PORTFOLIO_LINKS_FACTORY(lng: string) {
+	const output: any[] | any = [];
+	const { t } = useTranslation(lng, "common");
+
+	PORTFOLIO_LINKS.map(({ id, href, icon }) => {
+		output.push({
+			id,
+			label: t(`header.portfolio_links.${id}`),
+			href,
+			icon,
+		});
+	});
+
+	return output;
+}
+
+export function PROJECT_LINKS_FACTORY(lng: string) {
+	const output: any = [];
+	const { t } = useTranslation(lng, "common");
+
+	PROJECT_LINKS.map(({ id, href, icon }) => {
+		output.push({
+			id,
+			label: t(`header.project_links.${id}`),
+			href: href(lng),
+			icon,
+		});
+	});
+
+	return output;
+}
+
+export function CONTACT_LINKS_FACTORY(lng: string) {
+	const output: any = [];
+	const { t } = useTranslation(lng, "common");
+
+	CONTACT_LINKS.map(({ id, href, icon }) => {
+		output.push({
+			id,
+			label: t(`header.contact_links.${id}`),
+			href,
+			icon,
+		});
+	});
+
+	return output;
+}

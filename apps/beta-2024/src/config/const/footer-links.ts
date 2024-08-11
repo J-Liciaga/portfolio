@@ -1,18 +1,17 @@
+import { useTranslation } from "../i18n/client";
+
 export const PORTFOLIO_LINKS = [
 	{
-		id: "contact-link",
-		label: "About Me",
-		href: "/about",
+		id: "about_me_link",
+		href: (lng: string) => `/${lng}/about`,
 	},
 	{
-		id: "services-link",
-		label: "Services",
-		href: "/services",
+		id: "services_link",
+		href: (lng: string) => `/${lng}/services`,
 	},
 	{
-		id: "consultation-link",
-		label: "Case Studies",
-		href: "/case-studies",
+		id: "projects_link",
+		href: (lng: string) => `/${lng}/projects`,
 	},
 ] as const;
 
@@ -35,6 +34,29 @@ export const SOCIALS_LINKS = [
 	{
 		id: "the-garden-link",
 		label: "The Garden",
-		href: "garden.jliciaga.dev",
+		href: "https://garden.jliciaga.dev/",
 	},
 ] as const;
+
+type PL = [
+	{
+		title: string;
+		description: string;
+		link: string;
+	},
+];
+
+export function PORTFOLIO_LINK_FACTORY(lng: string) {
+	const output: any[] | PL = [];
+	const { t } = useTranslation(lng, "common");
+
+	PORTFOLIO_LINKS.map(({ id, href }) => {
+		output.push({
+			id,
+			label: t(`footer.portfolio_links.${id}`),
+			href: href(lng),
+		});
+	});
+
+	return output;
+}

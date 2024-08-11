@@ -1,15 +1,10 @@
 import "./global.css";
 
-import {
-	HeaderNavigation,
-	FooterNavigation,
-} from "@2024/components/navigation";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Toaster from "@lucky-ui/components/toaster";
 
 export const metadata = {
-	title: "Welcome | JLS",
+	title: "Welcome! | JLS",
 	description:
 		"Josiah Liciaga Silva, Personal Portfolio, Full-Stack Software Engineering, Machine Learning, JavaScript, Python, Golang, Rust",
 };
@@ -20,14 +15,11 @@ export default async function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html>
 			<body>
-				<HeaderNavigation />
-				<main className="min-h-screen min-w-screen">{children}</main>
-				<FooterNavigation />
+				{children}
 				<Analytics />
 				<SpeedInsights />
-				<Toaster />
 			</body>
 		</html>
 	);
