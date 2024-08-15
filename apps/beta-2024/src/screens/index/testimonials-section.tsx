@@ -9,7 +9,8 @@ type TestimonialsSectionProps = {
 };
 
 const styles = {
-	container: "px-12 space-y-8",
+	container: "space-y-8",
+	section_title_wrapper: "px-12",
 	section_box: "flex space-x-2",
 	section_num_text: `${bebas_neue.className} text-red-800 font-bold text-[4rem] tracking-wide`,
 	section_text: `${bebas_neue.className} font-bold text-[4rem] tracking-wide`,
@@ -20,7 +21,9 @@ export default function TestimonialsSection({ lng }: TestimonialsSectionProps) {
 
 	return (
 		<div className={styles.container}>
-			<SectionTitle num={5} title={t("testimonials.title")} />
+			<div className={styles.section_title_wrapper}>
+				<SectionTitle num={5} title={t("testimonials.title")} />
+			</div>
 			<InfiniteMovingCards
 				items={testimonials}
 				direction="right"

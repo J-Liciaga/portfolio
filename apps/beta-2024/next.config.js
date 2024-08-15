@@ -20,7 +20,7 @@ const nextConfig = {
 		svgr: true,
 	},
 	images: {
-		domains: ["api.microlink.io"],
+		domains: ["api.microlink.io", "aceternity.com"],
 	},
 };
 
